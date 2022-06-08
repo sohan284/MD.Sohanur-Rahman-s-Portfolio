@@ -12,6 +12,19 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.bgimg img{
+  border-radius: 300px;
+  opacity: 75%;
+}
+.bgimg img:hover{
+  transform: scale(1.1);
+  transition: transform 1s linear;
+}
+.bgimg h1:hover{
+  color: #61dafb;
+  transform: scale(1.02);
+  transition: transform 1s linear;
+}
 
 .App-header {
   background-color: #282c34;
@@ -26,6 +39,30 @@
 
 .App-link {
   color: #61dafb;
+}
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(7, 177, 245); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(5, 212, 248); }
+}
+.footer{
+  height: 150px;
+}
+.footerIcon img{
+  width: 50px;
 }
 
 @keyframes App-logo-spin {
