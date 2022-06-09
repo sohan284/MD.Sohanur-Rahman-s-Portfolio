@@ -15,6 +15,7 @@ const Home = () => {
             <Projects></Projects>
             <hr />
             <ContactMe></ContactMe>
+            <hr />
         </div>
     );
 };

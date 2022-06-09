@@ -9,7 +9,7 @@ const Banner = () => {
       <h1 class="text-5xl text-accent font-bold">HI!</h1>
       <h1 class="text-5xl text-accent font-bold">I AM SOHANUR <br /> RAHMAN</h1>
       <div className='typewriter'>
-        <h1>Front-end Developer</h1>
+        <h1 className='text-[gray]'>Front-end Developer</h1>
       </div>
       
       <a href='https://drive.google.com/file/d/1eFXo6i3eGtsTy0A_o6opY7P4OS7HiG5z/view?usp=sharing' target="_blank"  class="btn mt-16 btn-primary">Download Resume</a>

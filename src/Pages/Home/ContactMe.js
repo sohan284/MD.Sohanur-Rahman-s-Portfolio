@@ -1,18 +1,92 @@
-import React from 'react';
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const ContactMe = () => {
-    return (
-        <div className='flex justify-center'>
-           <div>
-               <h1 className='text-center text-accent text-4xl font-semibold my-10'>Contact me</h1>
-           <input type="text" className='rounded w-56' placeholder='Username' name="" id="" />
-            <input type="textarea" className='block w-56 textarea my-3' placeholder='text' />
-            <div className='flex justify-center'>
-            <input type="button" value="Submit" className='btn bg-primary text-black justify-center' />
-            </div>
-           </div>
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_mw5ra7q",
+        "template_suvcvch",
+        form.current,
+        "oMupwJAS1a7hnvO6w"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+  return (
+    <div
+      id="contact"
+      className=" rounded-lg mb-10"
+      >
+      <h1 className="text-4xl font-bold text-secondary text-center my-10 pt-12">
+        Contact
+      </h1>
+      <div class="hero ">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <div class="text-center lg:text-left lg:pl-10 w-1/2">
+            <h1 class="text-5xl text-primary font-bold">Get In Touch!</h1>
+            <p class="py-6 text-primary">
+              Send me email if you think I can help you out with any of your web
+              development related projects.
+            </p>
+          </div>
+          <div class="card flex-shrink-0 skills w-full max-w-sm shadow-2xl bg-black contact">
+            <form ref={form} onSubmit={sendEmail} class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text text-primary font-semibold">Name</span>
+                </label>
+                <input
+                  required
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  class="input input-bordered bg-primary text-black"
+                />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text text-primary font-semibold">Email</span>
+                </label>
+                <input
+                  required
+                  type="email"
+                  name="user_email"
+                  placeholder="Email"
+                  class="input input-bordered bg-primary text-black"
+                />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text text-primary font-semibold">Message</span>
+                </label>
+                <textarea
+                  className="bg-transparent bg-[#bebebe] text-black border-gray-600 border rounded"
+                  required
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="5"
+                ></textarea>
+              </div>
+              <div class="form-control mt-6">
+                <input type="submit" className="btn" value="Send" />
+              </div>
+            </form>
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default ContactMe;
