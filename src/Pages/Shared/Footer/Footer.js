@@ -4,7 +4,7 @@ import { faFacebook } from '@fortawesome/free-solid-svg-icons'
 
 const Footer = () => {
     return (
-        <div className='footer'>
+        <div className='footer head'>
 
             <div data-aos="zoom-out-up"  className='flex items-center pt-10  justify-around w-full'>
                 <div className='text-center text-accent justify-center'>

@@ -10,7 +10,7 @@ import ProjectDetails from './Pages/Home/ProjectDetails';
 
 function App() {
   return (
-    <div className='bg-black'>
+    <div className='bg'>
       <Header></Header>
       <hr />
       <Routes>

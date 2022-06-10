@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div class="hero bgimg min-h-screen bg-black">
+        <div class="hero bgimg min-h-screen bg">
   <div class="hero-content flex-col lg:flex-row">
     <div data-aos="fade-right">
     <img  src="https://i.ibb.co/frt5z2V/IMG20220311110215-01-removebg-preview-01.png" class="max-w-sm rounded-lg shadow-2xl" />
