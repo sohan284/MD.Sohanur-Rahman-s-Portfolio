@@ -3,30 +3,72 @@ import React from 'react';
 const AboutMe = () => {
     return (
         <div className='container mb-10  mx-auto'>
-<h1 data-aos="fade-up-left" className='text-4xl text-center mb-2 uppercase font-bold text-accent'>about me</h1>
-<p data-aos="fade-up-right" className='text-md text-accent mb-5'>I’am a junior front end developer. Usually I create applications with reactjs.My goal
-is to finish the task on time and trying to learn more. Currently I am pursuing Bachelor’s Degree in
-Software Engineering.</p> 
-<div className='grid lg:grid-cols-2 gap-5'>
-<div data-aos="fade-up-right" className='border bg-[#c4c4c41a] skills  p-3 rounded-md'>
-    <h1  className='text-4xl mb-2 text-center uppercase text-accent font-semibold '>programming Skills</h1> <hr />
-    <div className='m-5'>
-    <span className='text-accent font-semibold mr-10'>HTML</span><progress class="progress mt-3 progress-primary w-96" value="80" max="90"></progress> <br />
-    <span className='text-accent font-semibold mr-10'>CSS</span><progress class="progress mt-3 progress-primary w-96" value="80" max="100"></progress> <br />
-    <span className='text-accent font-semibold mr-10'>JavaScript</span><progress class="progress mt-3 progress-primary w-96" value="80" max="100"></progress> <br />
-    <span className='text-accent font-semibold mr-10'>ReactJS</span><progress class="progress mt-3 progress-primary w-96" value="70" max="100"></progress> <br />
-    <span className='text-accent font-semibold mr-10'>NodeJS</span><progress class="progress mt-3 progress-primary w-96" value="30" max="100"></progress> <br />
-    </div>
-</div>
-<div data-aos="fade-up-left" className='border bg-[#c4c4c41a] skills shadow-xl p-3 rounded-md'>
-    <h1  className='text-4xl mb-2 text-center uppercase text-accent font-semibold '>Education </h1> <hr />
-    <p className='text-accent text-xl m-5'>BSC in Software Engineering <br />
-Daffodil International University <br />
-Semester : 11th <br />
-CGPA : 3.54 <br />
-</p>
-    </div>
-</div>
+            <h1 data-aos="fade-up-left" className='text-4xl text-center mb-2 uppercase font-bold text-accent'>about me</h1>
+            <p data-aos="fade-up-right" className='text-md text-accent mb-5'>I’am a junior front end developer. Usually I create applications with reactjs.My goal
+                is to finish the task on time and trying to learn more. Currently I am pursuing Bachelor’s Degree in
+                Software Engineering.</p>
+            <div className='grid lg:grid-cols-1 gap-5'>
+                <div data-aos="fade-up-right" className='border bg-[#c4c4c41a] skills  p-3 rounded-md'>
+                    <h1 className='text-4xl mb-2 text-center uppercase text-accent font-semibold '>programming Skills</h1> <hr />
+                    <div className='m-5 flex justify-evenly'>
+                        <div className='flex '>
+                            <img width={30} src="https://i.ibb.co/9Y3DqkV/732190.png" alt="" /><progress class="progress mt-3 progress-primary border h-3 ml-3 w-64" value="87" max="90"></progress>
+                        </div>
+                        <div className='flex '>
+                            <img width={30} src="
+https://i.ibb.co/LYbZ6mF/732212.png
+" alt="" /><progress class="progress mt-3 progress-primary border h-3 ml-3 w-64" value="88" max="90"></progress>
+                        </div>
+                    </div>
+                    <div className='m-5 flex justify-evenly'>
+                        <div className='flex '>
+                            <img width={30} src="https://i.ibb.co/SBrQdDX/png-transparent-react-logo-javascript-redux-vuejs-angular-angularjs-expressjs-front-and-back-ends-th.png" alt="" /><progress class="progress mt-3 progress-primary border h-3 ml-3 w-64" value="70" max="90"></progress>
+                        </div>
+                        <div className='flex '>
+                            <img width={30} src="https://i.ibb.co/tHVGhsN/bootstrapicon.png" alt="" /><progress class="progress mt-3 progress-primary border h-3 ml-3 w-64" value="83" max="90"></progress>
+                        </div>
+                    </div>
+                    <div className='m-5 flex justify-evenly'>
+                        <div className='flex '>
+                            <img width={30} src="https://i.ibb.co/H7TH3JY/kisspng-mongodb-database-clip-art-computer-icons-nosql-5b900df9c897c4-0301692015361674178216.png" alt="" /><progress class="progress mt-3 progress-primary border h-3 ml-3 w-64" value="45" max="90"></progress>
+                        </div>
+                        <div className='flex '>
+                            <img width={30} src="https://i.ibb.co/5KH28Qq/919832.png" alt="" /><progress class="progress mt-3 progress-primary border h-3 ml-3 w-64" value="30" max="90"></progress>
+                        </div>
+                    </div>
+                    <div className='m-5 flex justify-evenly'>
+                        <div className='flex '>
+                            <img width={30} src="https://i.ibb.co/HKhT2Yc/kisspng-react-javascript-library-github-5af70e3c5c73d5-5239164815261404763787.png" alt="" /><progress class="progress mt-3 progress-primary border h-3 ml-3 w-64" value="80" max="90"></progress>
+                        </div>
+                        <div className='flex '>
+                            <img width={30} src="https://i.ibb.co/HnZkrVj/kisspng-firebase-cloud-messaging-computer-icons-google-clo-bell-notification-youtube-transparent-amp.png" alt="" /><progress class="progress mt-3 progress-primary border h-3 ml-3 w-64" value="60" max="90"></progress>
+                        </div>
+                    </div>
+                    <div className='m-5 flex justify-evenly'>
+                        <div className='flex '>
+                            <img width={30} src="https://i.ibb.co/F6fMZ2V/qy0ctxjhdgvvj6e4ra10.png" alt="" /><progress class="progress mt-3 progress-primary border h-3 ml-3 w-64" value="80" max="90"></progress>
+                        </div>
+                        <div className='flex '>
+                            <img width={30} src="https://i.ibb.co/ckPgXCM/Rlogical-Blog-Images-thumbnail.png" alt="" /><progress class="progress mt-3 progress-primary border h-3 ml-3 w-64" value="10" max="90"></progress>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up-left" className='border bg-[#c4c4c41a] skills shadow-xl p-3 rounded-md'>
+                    <h1 className='text-4xl mb-2 text-center uppercase text-accent font-semibold '>Education </h1> <hr />
+                   <div className='flex justify-around items-center'>
+                   <div data-aos="zoom-in"> <p className='text-accent text-xl m-5'>BSC in Software Engineering <br />
+                        Daffodil International University <br />
+                        Semester : 11th <br />
+                        CGPA : 3.54 <br />
+                    </p></div>
+                   <div data-aos="zoom-in">
+                   <img width={180} src="https://i.ibb.co/51sL04H/daffodil-international-university-logo.png" alt="" />
+                   </div>
+                   </div>
+                  
+                </div>
+                
+            </div>
         </div>
     );
 };
