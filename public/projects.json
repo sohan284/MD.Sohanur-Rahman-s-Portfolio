@@ -6,7 +6,21 @@
         "live": "https://moto-parts-c256e.web.app/",
         "cscode": "https://github.com/sohan284/Moto_Parts_manufacturer-client-site",
         "sscode": "https://github.com/sohan284/Moto_Parts_manufacturer-server-site",
-        "description": "Some cultures have adopted the traditional Western custom of the white wedding, in which a bride wears a white wedding dress and veil. Our service is always best.This is wedding film service.I take this in our own hand .We also deliver as soon as possible.for this package you will get 10% discount from our perfect couple team.",
+        "desc":[
+            "● Log in and signup with email and password.Also can log in by google.",
+            "● Home page has a banner , some bike Parts and user review section",
+            "● User can order quantity if logged in ",
+            "● User can add review and can manage his orders."
+        ],
+        "tech": [
+            "● Javascript",
+            "● React",
+            "● NodeJS",
+            "● Mongodb"
+            ,"● Firebase"
+            ,"● HTML"
+            ,"● CSS(Tailwind)"
+        ],
         "img": [
             "https://i.ibb.co/v4ShSrW/Screenshot-10.png",
             "https://i.ibb.co/rstWKps/Screenshot-11.png",
@@ -21,7 +35,21 @@
         "live": "https://grocery-shop-c9e00.web.app/",
         "cscode": "https://github.com/sohan284/Grocery_Shop_Client-site",
         "sscode": "https://github.com/sohan284/Grocery_Shop_Server-site",
-        "description": "Some cultures have adopted the traditional Western custom of the white wedding, in which a bride wears a white wedding dress and veil. Our service is always best.This is wedding film service.I take this in our own hand .We also deliver as soon as possible.for this package you will get 10% discount from our perfect couple team.",
+        "desc":[
+            "● Log in and signup with email and password.",
+            "● Also can log in by google.",
+            "● Home page has a banner and an inventory section with some grocery items",
+            "● User can add and remove items if he is logged in .."
+        ],
+        "tech": [
+            "● Javascript",
+            "● React",
+            "● NodeJS",
+            "● Mongodb"
+            ,"● Firebase"
+            ,"● HTML"
+            ,"● CSS(Bootstrap)"
+        ],
         "img": [
             "https://i.ibb.co/TggvB3N/Screenshot-21.png",
             "https://i.ibb.co/4mMZqWM/Screenshot-22.png",
@@ -35,13 +63,27 @@
         "type": "Photography",
         "live": "https://perfect-couple-90811.web.app/",
         "cscode": "https://github.com/sohan284/Perfect-Couple-firebase",
-        "sscode": "https://github.com/sohan284/Grocery_Shop_Server-site",
-        "description": "Some cultures have adopted the traditional Western custom of the white wedding, in which a bride wears a white wedding dress and veil. Our service is always best.This is wedding film service.I take this in our own hand .We also deliver as soon as possible.for this package you will get 10% discount from our perfect couple team.",
+        "sscode": "https://github.com/sohan284/Perfect-Couple-firebase",
+        "desc":[
+            "● Log in and signup with email and password.Also can log in by google",
+            "● Also can log in by google.",
+            "● Homepage has a banner and a services section with some photography services.",
+            "● User can checkout if he is logged in ."
+        ],
+        "tech": [
+            "● Javascript",
+            "● React",
+            "● Netlify",
+            "● React Router"
+            ,"● Firebase"
+            ,"● HTML"
+            ,"● CSS(Tailwind)"
+        ],
         "img": [
-            "https://i.ibb.co/bLDqXQg/Screenshot-26.png",
+            "https://i.ibb.co/q93RJv5/Screenshot-26.png",
             "https://i.ibb.co/D4b38WG/Screenshot-27.png",
 "https://i.ibb.co/zx51LZq/Screenshot-28.png",
-"https://i.ibb.co/NNywNQq/Screenshot-29.png"
+"https://i.ibb.co/rv3pfp7/Screenshot-29.png"
         ]
     }
 ]

@@ -76,6 +76,10 @@
 .contact{
   border: 2px solid silver;
 }
+.projectImg{
+  width: 650px;
+  margin: 20px;
+}
 .project:hover{
   transform: scale(1.02);
   /* border: 1px solid silver; */

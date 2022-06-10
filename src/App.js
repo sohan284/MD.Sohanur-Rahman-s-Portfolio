@@ -5,8 +5,8 @@ import Home from './Pages/Home/Home';
 import { Route, Routes } from 'react-router-dom';
 import Footer from './Pages/Shared/Footer/Footer';
 import Blogs from './Pages/Blogs/Blogs';
-import ProjDetails from './Pages/Home/ProjDetails';
 import AboutMe from './Pages/Home/AboutMe';
+import ProjectDetails from './Pages/Home/ProjectDetails';
 
 function App() {
   return (
@@ -18,7 +18,8 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/aboutMe' element={<AboutMe></AboutMe>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
-        <Route path='/projDetails/:projectId' element={<ProjDetails></ProjDetails>}></Route>
+        <Route path='/projectDetails' element={<ProjectDetails></ProjectDetails>}></Route>
+        
       </Routes>
       <Footer></Footer>
 
