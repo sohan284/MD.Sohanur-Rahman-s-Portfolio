@@ -3,7 +3,7 @@ import React from 'react';
 const AboutMe = () => {
     return (
         <div className='container mb-10  mx-auto'>
-<h1 data-aos="fade-up-left" className='text-4xl mb-2 uppercase font-bold text-accent'>about me</h1>
+<h1 data-aos="fade-up-left" className='text-4xl text-center mb-2 uppercase font-bold text-accent'>about me</h1>
 <p data-aos="fade-up-right" className='text-md text-accent mb-5'>I’am a junior front end developer. Usually I create applications with reactjs.My goal
 is to finish the task on time and trying to learn more. Currently I am pursuing Bachelor’s Degree in
 Software Engineering.</p> 

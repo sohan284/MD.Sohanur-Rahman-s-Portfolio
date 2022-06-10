@@ -4,7 +4,9 @@ const Banner = () => {
     return (
         <div class="hero bgimg min-h-screen bg-black">
   <div class="hero-content flex-col lg:flex-row">
-    <img data-aos="fade-right" src="https://i.ibb.co/frt5z2V/IMG20220311110215-01-removebg-preview-01.png" class="max-w-sm rounded-lg shadow-2xl" />
+    <div data-aos="fade-right">
+    <img  src="https://i.ibb.co/frt5z2V/IMG20220311110215-01-removebg-preview-01.png" class="max-w-sm rounded-lg shadow-2xl" />
+    </div>
     <div data-aos="fade-left" className='ml-20'>
       <h1 class="text-5xl text-accent font-bold">HI!</h1>
       <h1 class="text-5xl text-accent font-bold">I AM SOHANUR <br /> RAHMAN</h1>

@@ -6,7 +6,7 @@ const ProjectOne = ({project}) => {
     const navigate = useNavigate();
 
     const handleProjectDetails = id =>{
-        navigate(`/projectDetails/${id}`)
+        navigate(`/projDetails/${id}`)
     }
     return (
         <div>

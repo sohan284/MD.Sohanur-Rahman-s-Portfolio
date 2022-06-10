@@ -62,6 +62,11 @@
   background-color: rgba(116, 115, 115, 0.384);
   border: 2px solid silver;
 }
+.aboutMe img{
+  opacity: 50%;
+  border-radius: 360px;
+  
+}
 .footer{
   height: 150px;
 }
@@ -74,7 +79,7 @@
 .project:hover{
   transform: scale(1.02);
   /* border: 1px solid silver; */
-  box-shadow: 3px 3px 50px 3px silver;
+  box-shadow: 3px 3px 20px 3px silver;
   transition: transform .2s linear;
 }
 .skills:hover{
