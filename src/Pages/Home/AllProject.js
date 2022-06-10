@@ -3,7 +3,7 @@ import React from 'react';
 const AllProject = ({project}) => {
     const {name,img,type,live,cscode,sscode,desc,tech} = project;
     return (
-        <div className='flex justify-center h-screen'>
+        <div className='flex justify-center'>
             <div className='bg-[#ffffff34] mt-5  rounded-lg'>
                 <h1 className='text-4xl font-bold text-primary text-center'>{name}</h1>
                 <h1 className='text-xl font-semibold text-primary text-center'>{type}</h1>
