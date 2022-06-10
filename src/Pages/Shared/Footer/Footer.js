@@ -6,11 +6,11 @@ const Footer = () => {
     return (
         <div className='footer'>
 
-            <div className='flex items-center pt-10  justify-around w-full'>
+            <div data-aos="zoom-out-up"  className='flex items-center pt-10  justify-around w-full'>
                 <div className='text-center text-accent justify-center'>
                     Copyright @ All right reserved
                 </div>
-                <div className='flex justify-center  footerIcon'>
+                <div  className='flex justify-center  footerIcon'>
                     <a className="link mr-1 link-hover border-2 rounded-full" href='https://www.facebook.com/SrSohan2748' target='blank'>
           <img width={40} src="https://i.ibb.co/7Sv45pg/facebook-circle.png" alt="" /></a>
           <a className="link link-hover border-2 rounded-full" href='https://github.com/sohan284' target='blank'>

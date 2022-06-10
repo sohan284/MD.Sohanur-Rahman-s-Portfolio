@@ -23,7 +23,7 @@ const ContactMe = () => {
       );
   };
   return (
-    <div
+    <div data-aos="zoom-out-up"
       id="contact"
       className=" rounded-lg mb-10"
       >

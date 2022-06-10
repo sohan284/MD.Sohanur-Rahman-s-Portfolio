@@ -58,6 +58,10 @@
   from, to { border-color: transparent }
   50% { border-color: rgb(5, 212, 248); }
 }
+.bttn:hover{
+  background-color: rgba(116, 115, 115, 0.384);
+  border: 2px solid silver;
+}
 .footer{
   height: 150px;
 }
@@ -69,7 +73,9 @@
 }
 .project:hover{
   transform: scale(1.02);
-  transition: transform,border .2s linear;
+  /* border: 1px solid silver; */
+  box-shadow: 3px 3px 50px 3px silver;
+  transition: transform .2s linear;
 }
 .skills:hover{
   transform: scale(1.02);

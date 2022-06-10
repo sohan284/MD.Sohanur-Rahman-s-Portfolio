@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1,
+        "name": "Moto Parts",
+        "type":"Menufacturer",
+        "cscode": "",
+        "sscode": "",
+        "description": "Some cultures have adopted the traditional Western custom of the white wedding, in which a bride wears a white wedding dress and veil. Our service is always best.This is wedding film service.I take this in our own hand .We also deliver as soon as possible.for this package you will get 10% discount from our perfect couple team.",
+        "img": [
+            "https://i.ibb.co/v4ShSrW/Screenshot-10.png",
+            "https://i.ibb.co/rstWKps/Screenshot-11.png",
+            "https://i.ibb.co/nmZgwsd/Screenshot-12.png",
+            "https://i.ibb.co/K5SXqXK/Screenshot-14.png"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Grocery Shop",
+        "type":"E-commerce",
+        "cscode": "",
+        "sscode": "",
+        "description": "Some cultures have adopted the traditional Western custom of the white wedding, in which a bride wears a white wedding dress and veil. Our service is always best.This is wedding film service.I take this in our own hand .We also deliver as soon as possible.for this package you will get 10% discount from our perfect couple team.",
+        "img": [
+            "https://i.ibb.co/TggvB3N/Screenshot-21.png",
+"https://i.ibb.co/4mMZqWM/Screenshot-22.png",
+"https://i.ibb.co/sKPT2jg/Screenshot-23.png",
+"https://i.ibb.co/YQ6vhKd/Screenshot-24.png"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Perfect Couple",
+        "type":"Photography",
+        "cscode": "",
+        "sscode": "",
+        "description": "Some cultures have adopted the traditional Western custom of the white wedding, in which a bride wears a white wedding dress and veil. Our service is always best.This is wedding film service.I take this in our own hand .We also deliver as soon as possible.for this package you will get 10% discount from our perfect couple team.",
+        "img": [
+            "https://i.ibb.co/bLDqXQg/Screenshot-26.png",
+            "https://i.ibb.co/rstWKps/Screenshot-11.png",
+            "https://i.ibb.co/nmZgwsd/Screenshot-12.png",
+            "https://i.ibb.co/K5SXqXK/Screenshot-14.png"
+        ]
+    }
+
+]

@@ -4,6 +4,8 @@ import Header from './Pages/Shared/Header/Header';
 import Home from './Pages/Home/Home';
 import { Route, Routes } from 'react-router-dom';
 import Footer from './Pages/Shared/Footer/Footer';
+import Blogs from './Pages/Blogs/Blogs';
+import ProjectDetails from './Pages/Blogs/Project/ProjectDetails';
 
 function App() {
   return (
@@ -11,10 +13,13 @@ function App() {
       <Header></Header>
       <hr />
       <Routes>
-<Route path='/' element={<Home></Home>}></Route>
+        <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='/projectDetails/:projectId' element={<ProjectDetails></ProjectDetails>}></Route>
       </Routes>
       <Footer></Footer>
-     
+
     </div>
   );
 }
