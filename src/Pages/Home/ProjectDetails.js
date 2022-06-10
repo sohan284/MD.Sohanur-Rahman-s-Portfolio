@@ -8,7 +8,6 @@ const ProjectDetails = () => {
 
     return (
         <div>
-            <h1>{project.length}</h1>
             {
                 project.map(proj=><AllProject project={proj}></AllProject>)
             }
