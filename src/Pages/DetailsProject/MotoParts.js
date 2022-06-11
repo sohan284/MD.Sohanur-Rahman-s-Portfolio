@@ -41,7 +41,7 @@ const MotoParts = () => {
     <a className='btn rounded-full bg-primary text-black font-bold' href={project.live}>LIVE</a>
     <a className='btn rounded-xl bg-primary text-black font-bold' href={project.sscode}>SERVER SITE</a>
   </div>
-      <div class="h-96 carousel prjImg carousel-vertical rounded-box">
+      <div class="h-96 carousel prjImg p-3 rounded-lx carousel-vertical rounded-box">
         <div class="carousel-item h-full">
           <img src={project.img[0]} />
         </div>
@@ -61,7 +61,7 @@ const MotoParts = () => {
       <div className='flex flex-col justify-between'>
       <div>
         <hr className='mt-10' />
-        <h1 className='text-3xl font-bold text-primary my-5'>Technology:</h1>
+        <h1 className='text-3xl px-3 font-bold text-primary my-5'>Technology:</h1>
           <ul className='text-primary ml-5 text-lg'>
             
            
@@ -78,7 +78,7 @@ const MotoParts = () => {
           </ul>
         </div>
         <div>
-        <h1 className='text-3xl mt-10 font-bold text-primary my-5'>Features:</h1>
+        <h1 className='text-3xl px-3 mt-10 font-bold text-primary my-5'>Features:</h1>
           <ul className='text-primary ml-5 text-lg'>
             <li>{project.desc[0]}</li>
             <li>{project.desc[1]}</li>
