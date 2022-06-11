@@ -85,6 +85,10 @@
   width: 80%;
   margin: 20px;
 }
+.prjImg img{
+  width: 100%;
+
+}
 .project:hover{
   transform: scale(1.02);
   /* border: 1px solid silver; */
