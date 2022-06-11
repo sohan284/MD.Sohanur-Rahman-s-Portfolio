@@ -24,24 +24,37 @@ const AllProject = ({project}) => {
                 </div>
               </div>
             <div data-aos="zoom-out-up">
-            <h1 className='text-primary text-2xl font-bold p-2'>Features : </h1>
-            <ul className='ml-10'>
+            <h1 className='text-primary text-2xl  font-bold p-2'>Features : </h1>
+            <ul className='ml-10 '>
                 <li className='text-primary'>{desc[0]}</li>
                 <li className='text-primary'>{desc[1]}</li>
                 <li className='text-primary'>{desc[2]}</li>
                 <li className='text-primary'>{desc[3]}</li>
             </ul>
-            <h1 className='text-primary text-2xl font-bold p-2'>Technology : </h1>
+            <h1 className='text-primary text-2xl  font-bold p-2'>Technology : </h1>
             <ul >
-            <li className='text-primary font-semibold pl-10 py-1'>{tech[0]}</li>
+              <div className='flex justify-between'>
+                <div>
+                <li className='text-primary font-semibold pl-10 py-1'>{tech[0]}</li>
             <li className='text-primary font-semibold pl-10 py-1'>{tech[1]}</li>
             <li className='text-primary font-semibold pl-10 py-1'>{tech[2]}</li>
-            <li className='text-primary font-semibold pl-10 py-1'>{tech[3]}</li>
-            <li className='text-primary font-semibold pl-10 py-1'>{tech[4]}</li>
+           
+                </div>
+                <div>
+                <li className='text-primary font-semibold pl-10 py-1'>{tech[3]}</li>
+                <li className='text-primary font-semibold pl-10 py-1'>{tech[4]}</li>
+           
+                </div>
+                <div>
+           
             <li className='text-primary font-semibold pl-10 py-1'>{tech[5]}</li>
             <li className='text-primary font-semibold pl-10 py-1'>{tech[6]}</li>
+                </div>
+              </div>
+            
+            
             </ul>
-            <div className='flex justify-between projectImg'>
+            <div className='flex pb-20 justify-between projectImg'>
                     <a href={cscode} className='bg-primary text-black font-bold btn '>Client Site</a>
                     <a href={live} className='bg-primary rounded-full text-black font-bold btn '>Live</a>
                     <a href={sscode} className='bg-primary text-black font-bold btn '> Server Site</a>
