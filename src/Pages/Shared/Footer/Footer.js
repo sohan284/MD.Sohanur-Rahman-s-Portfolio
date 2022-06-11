@@ -20,7 +20,7 @@ const Footer = () => {
                     </div>
                     <div className='flex justify-between mt-3 items-center'>
           <img width={35} src="https://i.ibb.co/LvPDKrb/pngwing-com-5.png" alt="" />
-          <p className='text-primary ml-2 text-lg font-bold'>sr.sohan008@gmail.com</p>
+          <p className='text-primary ml-2 text-lg font-bold'>sr.sohan088@gmail.com</p>
                     </div>
                     <div className='flex justify-between mt-3 items-center'>
           <img width={35} src="https://i.ibb.co/G3wLQMv/pngwing-com-6.png" alt="" />
