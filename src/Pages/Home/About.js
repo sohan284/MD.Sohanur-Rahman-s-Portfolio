@@ -16,7 +16,7 @@ const About = () => {
           
             <p class="py-6 text-primary">
             <span className='text-primary font-semibold text-xl'>Hello! I'm MD.Sohanur Rahman Sohan, from Dhaka, Bangladesh.</span> <br /> I’am a junior front end developer. Usually I create applications with reactjs.My goal is to finish the task on time and trying to learn more. Currently I am pursuing Bachelor’s Degree in Software Engineering.</p>
-            <button onClick={moreDetails} class="btn btn-primary">More Details</button>
+            <button onClick={moreDetails} class="btn btn-primary">See more</button>
           </div>
          
           <div  data-aos="zoom-in">

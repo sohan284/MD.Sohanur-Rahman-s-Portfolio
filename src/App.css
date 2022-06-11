@@ -74,11 +74,9 @@
   background-image:url(https://i.ibb.co/cx5CX7Y/Inferior-Flowery-Bettong.webp);
   /* background-image:url(https://i.ibb.co/HHhLvq3/58359e76f4025d718bfa15904728ea4c.jpg); */
 }
-.footer{
-  height: 150px;
-}
+
 .footerIcon img{
-  width: 50px;
+  width: 30px;
 }
 .contact{
   border: 2px solid silver;

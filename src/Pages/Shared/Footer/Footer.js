@@ -6,17 +6,26 @@ const Footer = () => {
     return (
         <div className='footer head'>
 
-            <div data-aos="zoom-out-up"  className='flex items-center pt-10  justify-around w-full'>
-                <div className='text-center text-accent justify-center'>
-                    Copyright @ All right reserved
+            <div data-aos="zoom-out-up"  className='flex items-center pt-5  justify-evenly lg:flex-row md:flex-row flex-col w-full'>
+                <div className='text-accent justify-center'>
+                    <img width={80}  className='rounded-full' src="https://i.ibb.co/frt5z2V/IMG20220311110215-01-removebg-preview-01.png" alt="" />
+                    <h1 className='font-bold text-2xl'>MD.Sohanur Rahman Sohan</h1>
+                    <h1 className='font-semibold text-lg'>Junior Web Developer</h1>
                 </div>
-                <div  className='flex justify-center  footerIcon'>
-                    <a className="link mr-1 link-hover border-2 rounded-full" href='https://www.facebook.com/SrSohan2748' target='blank'>
-          <img width={40} src="https://i.ibb.co/7Sv45pg/facebook-circle.png" alt="" /></a>
-          <a className="link link-hover border-2 rounded-full" href='https://github.com/sohan284' target='blank'>
-          <img width={42} src="https://i.ibb.co/8dQKqtG/68747470733a2f2f64617368626f6172642e736e617063726166742e696f2f736974655f6d656469612f6170706d65646961.png" alt="" /></a>
-          <a className="link link-hover ml-1 border-2 rounded-full" href='https://www.linkedin.com/in/sr-sohan-1621a0199/' target='blank'>
-          <img width={43} src="https://i.ibb.co/h1bwTJB/linked-in-icon-18.png" alt="" /></a>
+                <div  className='flex  flex-col justify-center'>
+                  
+                    <div className='flex items-center'>
+          <img width={35} src="https://i.ibb.co/5WR76z2/pngwing-com.png" alt="" />
+          <p className='text-primary ml-2 text-lg font-bold'>+01788175088</p>
+                    </div>
+                    <div className='flex justify-between mt-3 items-center'>
+          <img width={35} src="https://i.ibb.co/LvPDKrb/pngwing-com-5.png" alt="" />
+          <p className='text-primary ml-2 text-lg font-bold'>sr.sohan008@gmail.com</p>
+                    </div>
+                    <div className='flex justify-between mt-3 items-center'>
+          <img width={35} src="https://i.ibb.co/G3wLQMv/pngwing-com-6.png" alt="" />
+          <p className='text-primary ml-2 text-lg font-bold'>Mirpur,Dhaka,Bangladesh</p>
+                    </div>
                 </div>
             </div>
         </div>
