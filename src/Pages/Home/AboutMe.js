@@ -19,7 +19,7 @@ const AboutMe = () => {
 
                 </div>
             <p data-aos="fade-up-right" className='text-md p-3 text-accent mb-5'>I’am a junior front end developer. Usually I create applications with reactjs.My goal
-                is to finish the task on time and trying to learn more. Currently I am pursuing Bachelor’s Degree in
+                is to finish the task on time and trying to learn more. I want to be a full-stack developer.I love Programming,Developing,Learning and Problem Solving.I am passionate about taking risks and solving them by communiacating and sharing experience and knowledge. Currently I am pursuing Bachelor’s Degree in
                 Software Engineering.</p>
             <div className='grid grid-cols-1 gap-5'>
                 <div data-aos="fade-up-right" className='border bg-[#c4c4c41a]   p-3 rounded-md'>
