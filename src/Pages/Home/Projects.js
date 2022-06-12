@@ -10,7 +10,7 @@ const Projects = () => {
     
     return (
         <div className='container mb-20 mx-auto'>
-            <h1 className='text-4xl text-center my-10 uppercase font-bold text-accent'>Projects</h1>
+            <h1 data-aos="zoom-in" className='text-4xl text-center my-10 uppercase font-bold text-accent'>Projects</h1>
          <div className='grid lg:grid-cols-3 grid-cols-1 gap-5'>  
          {
              project.map(p=><ProjectOne project={p}></ProjectOne>)
