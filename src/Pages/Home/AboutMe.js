@@ -27,7 +27,7 @@ const AboutMe = () => {
                 is to finish the task on time and trying to learn more. I want to be a full-stack developer.I love Programming,Developing,Learning and Problem Solving.I am passionate about taking risks and solving them by communiacating and sharing experience and knowledge. Currently I am pursuing Bachelor’s Degree in
                 Software Engineering.</p>
             <div className='grid grid-cols-1 gap-5'>
-                <div   className='border bg-[#c4c4c41a]   p-3 rounded-md'>
+                <div   className='border foot   p-3 rounded-md'>
                     <h1 data-aos="fade-up" data-aos-duration="600" className='text-4xl mb-2 text-center uppercase text-accent font-semibold '>Skills</h1> <hr />
                     <div className='ml-5 mt-5 flex justify-evenly flex-col lg:flex-row sm:flex-row'>
                         <div className='flex my-2'>

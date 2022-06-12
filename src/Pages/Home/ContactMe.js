@@ -27,10 +27,9 @@ const ContactMe = () => {
       id="contact"
       className=" rounded-lg mb-10"
       >
-      <h1 data-aos="fade-up"
-     data-aos-duration="100"  className="text-4xl font-bold text-secondary text-center my-10 pt-12">
-        Contact
-      </h1>
+
+      <h1 data-aos="zoom-in"
+     className='text-4xl text-center my-20 uppercase font-bold mx-auto container py-2 foot text-accent border-x-8'>Contact</h1>
       <div  class="hero ">
         <div class="hero-content flex-col lg:flex-row-reverse">
           <div class="text-center lg:text-left lg:pl-10 w-1/2">

@@ -9,14 +9,9 @@ const Home = () => {
     return (
         <div className=''>
             <Banner></Banner>
-            <hr />
-            <About></About>
-            <div class="divider"></div>
-            <hr />
-            <Projects></Projects>
-            <hr />
+            <About></About>     
+            <Projects></Projects>  
             <ContactMe></ContactMe>
-            <hr />
         
         </div>
     );
