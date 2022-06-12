@@ -4,17 +4,17 @@ const Banner = () => {
     return (
         <div class="hero bgimg min-h-screen bg">
   <div class="hero-content flex-col lg:flex-row">
-    <div data-aos="fade-right">
+    <div data-aos="fade-up" >
     <img  src="https://i.ibb.co/frt5z2V/IMG20220311110215-01-removebg-preview-01.png" class="max-w-sm rounded-lg shadow-2xl" />
     </div>
-    <div data-aos="fade-left" className='ml-20'>
+    <div  data-aos="fade-up" className='ml-20'>
       <h1 class="text-5xl text-accent font-bold">HI!</h1>
       <h1 class="text-5xl text-accent font-bold">I AM SOHANUR <br /> RAHMAN</h1>
-      <div className='typewriter'>
+      <div data-aos="fade-down" className='typewriter'>
         <h1 className='text-[gray]'>Front-end Developer</h1>
       </div>
       <p className='text-sm font-bold text-primary mt-5 mb-2'>Connect Me</p>
-      <div  className='flex footerIcon'>
+      <div  data-aos="fade-up" className='flex footerIcon'>
        
                     <a className="link mr-1 link-hover border-2 rounded-full" href='https://www.facebook.com/SrSohan2748' target='blank'>
           <img width={20} src="https://i.ibb.co/7Sv45pg/facebook-circle.png" alt="" /></a>

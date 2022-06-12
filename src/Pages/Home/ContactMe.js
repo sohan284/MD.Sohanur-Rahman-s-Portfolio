@@ -27,19 +27,23 @@ const ContactMe = () => {
       id="contact"
       className=" rounded-lg mb-10"
       >
-      <h1 data-aos="zoom-out-up" className="text-4xl font-bold text-secondary text-center my-10 pt-12">
+      <h1 data-aos="fade-up"
+     data-aos-duration="100"  className="text-4xl font-bold text-secondary text-center my-10 pt-12">
         Contact
       </h1>
       <div  class="hero ">
         <div class="hero-content flex-col lg:flex-row-reverse">
           <div class="text-center lg:text-left lg:pl-10 w-1/2">
-            <h1 data-aos="zoom-out-up" class="text-5xl text-primary font-bold">Get In Touch!</h1>
-            <p data-aos="zoom-out-up" class="py-6 text-primary">
+            <h1 data-aos="fade-up"
+     data-aos-duration="200"  class="text-5xl text-primary font-bold">Get In Touch!</h1>
+            <p  data-aos="fade-up"
+     data-aos-duration="300" class="py-6 text-primary">
               Send me email if you think I can help you out with any of your web
               development related projects.
             </p>
           </div>
-          <div data-aos="zoom-out-up" class="card flex-shrink-0 skills w-full max-w-sm shadow-2xl bg-black contact">
+          <div  data-aos="fade-up"
+     data-aos-duration="300" class="card flex-shrink-0 skills w-full max-w-sm shadow-2xl bg-black contact">
             <form ref={form} onSubmit={sendEmail} class="card-body">
               <div class="form-control">
                 <label class="label">
