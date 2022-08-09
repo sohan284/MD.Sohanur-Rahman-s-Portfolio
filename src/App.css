@@ -14,7 +14,6 @@
 }
 .bgimg img{
   border-radius: 300px;
-  opacity: 75%;
 }
 
 .App-header {
@@ -26,6 +25,9 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+.aboutImg{
+  opacity: 85%;
 }
 
 .App-link {

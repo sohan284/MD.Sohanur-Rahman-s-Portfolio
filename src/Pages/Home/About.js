@@ -10,6 +10,9 @@ const About = () => {
     return (
         <div class="hero aboutMe min-h-screen">
         <div class="hero-content flex-col lg:flex-row">
+        <div className='aboutImg'>
+          <img data-aos="fade-up" src="https://i.ibb.co/ngTB5gS/sohan2-removebg-preview-1.png" class="max-w-sm  shadow-2xl h-80" />
+          </div>
        
           <div>
           <h1 data-aos="zoom-in"
@@ -22,9 +25,7 @@ const About = () => {
      data-aos-duration="300" onClick={moreDetails} class="btn foot">Explore more</button>
           </div>
          
-          <div >
-          <img data-aos="fade-up" src="https://i.ibb.co/SyVLG62/IMG20211224173054-removebg-preview.png" class="max-w-sm rounded-lg shadow-2xl" />
-          </div>
+         
         </div>
       </div>
     );

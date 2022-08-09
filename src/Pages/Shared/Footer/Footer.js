@@ -1,18 +1,15 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { faFacebook } from '@fortawesome/free-solid-svg-icons'
 
 const Footer = () => {
     return (
         <div className='foot'>
 
-            <div  className='flex items-center pt-5  justify-evenly lg:flex-row md:flex-row flex-col w-full'>
-                <div data-aos="zoom-in" className='text-accent justify-center'>
-                    <img width={80}  className='rounded-full' src="https://i.ibb.co/frt5z2V/IMG20220311110215-01-removebg-preview-01.png" alt="" />
-                    <h1 className='font-bold text-2xl'>MD.Sohanur Rahman Sohan</h1>
+            <div data-aos="zoom-in" className='flex items-center pt-5  justify-evenly lg:flex-row md:flex-row flex-col w-full'>
+                <div  className='text-accent '>
+                <h1 className='font-bold text-3xl'>MD.Sohanur Rahman Sohan</h1>
                     <h1 className='font-semibold text-lg'>Junior Web Developer</h1>
                 </div>
-                <div data-aos="zoom-in" className='flex  flex-col justify-center'>
+                <div className='flex  flex-col justify-center'>
                   
                     <div className='flex items-center'>
           <img width={35} src="https://i.ibb.co/5WR76z2/pngwing-com.png" alt="" />

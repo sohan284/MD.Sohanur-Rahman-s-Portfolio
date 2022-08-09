@@ -6,7 +6,7 @@ const AboutMe = () => {
             <div data-aos="fade-up" className='  skills shadow-xl p-3 rounded-md'>
                     <div className='flex justify-evenly mt-5 flex-col lg:flex-row  items-center'>
                     <div data-aos="zoom-in-up">
-                            <img className='rounded-lg' width={220} src="https://i.ibb.co/f039Tj1/IMG-20211217-021037-01-removebg-preview-2.jpg" alt="" />
+                            <img className='rounded-lg' width={220} src="https://i.ibb.co/8m1zNtv/Sohanur-Rahman.png" alt="" />
                         </div>
                         <div> <p className='text-accent text-xl m-5'>
                           <p data-aos="fade-up"

@@ -3,9 +3,9 @@ import React from 'react';
 const Banner = () => {
     return (
         <div class="hero bgimg min-h-screen bgBanner">
-  <div class="hero-content flex-col lg:flex-row">
+  <div class="hero-content flex-col lg:flex-row-reverse">
     <div data-aos="fade-up" >
-    <img  src="https://i.ibb.co/frt5z2V/IMG20220311110215-01-removebg-preview-01.png" class="max-w-sm rounded-lg shadow-2xl" />
+    <img  src="https://i.ibb.co/thHDzrj/IMG20220630184715-2-01-removebg-preview.png" class="max-w-sm rounded-lg shadow-2xl" />
     </div>
     <div  data-aos="fade-up" className='ml-20'>
       <h1 class="text-5xl text-accent font-bold">HI!</h1>
