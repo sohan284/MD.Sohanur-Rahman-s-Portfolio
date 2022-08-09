@@ -52,8 +52,8 @@
   50% { border-color: rgb(5, 212, 248); }
 }
 .bttn:hover{
-  background-color: rgba(116, 115, 115, 0.384);
-  border: 2px solid silver;
+  background-color: rgba(122, 1, 1, 0.815);
+  border: 2px solid rgb(40, 12, 197);
 }
 .aboutMe img{
   opacity: 70%;
@@ -64,26 +64,21 @@
   background-image: url(https://i.ibb.co/vmcjKyT/d278c78f03859a337392b627794544bb.gif);
 }
 .foot{
-  background-color: #00002c8c;
+  background-color: #0e3e664d;
 }
 .bg{
   background-image:url(https://i.ibb.co/cx5CX7Y/Inferior-Flowery-Bettong.webp);
   /* background-image:url(https://i.ibb.co/HHhLvq3/58359e76f4025d718bfa15904728ea4c.jpg); */
 }
-.bgBanner{
 
-}
 .prj{
-  border-end-end-radius: 120px;
-  border-top-left-radius: 120px;
-}
-.prj:hover{
-  border: 3px solid darkblue;
- 
-  background-image:url(https://i.ibb.co/TRGvFL6/tumblr-opno5n-ZGCT1vsjcxvo1-r1-540.gif);
-  /* background-image:url(https://i.ibb.co/HHhLvq3/58359e76f4025d718bfa15904728ea4c.jpg); */
+ border-radius: 20px;
+ background: linear-gradient(100deg, rgba(250, 0, 0, 0.479) 0%, rgba(0, 69, 97, 0.466) 55%);
+ border: none;
+ border-top-left-radius: 100px;
 
 }
+
 
 .footerIcon img{
   width: 30px;
@@ -92,8 +87,14 @@
   border: 2px solid silver;
 }
 .projectImg{
-  width: 80%;
-  margin: 20px;
+  transform: rotate(-10deg);
+  width: 300px;
+  margin-top: 30px;
+}
+.prj:hover img{
+  transform: scale(1.2);
+  transition: transform .5s ease-in;
+  
 }
 .prjImg img{
   width: 100%;

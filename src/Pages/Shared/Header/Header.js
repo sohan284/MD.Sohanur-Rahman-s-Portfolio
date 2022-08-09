@@ -21,14 +21,14 @@ const Header = () => {
         
       </ul>
     </div>
-    <a href='/home' class="btn btn-ghost normal-case text-4xl">SOHAN</a>
+    <a href='/home' class="btn btn-ghost mx-auto normal-case text-4xl">SOHAN</a>
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal p-0">
-    <li><Link to={'/home'}>HOME</Link></li>
+    <li className='font-semibold'><Link  to={'/home'}>HOME</Link></li>
     <li  className='font-semibold'><a href="/home#contact">CONTACT</a></li>
-    <li><Link to={'/blogs'}>BLOGS</Link></li>
-    <li><Link to={'/aboutme'}>ABOUT</Link></li>
+    <li className='font-semibold'><Link to={'/blogs'}>BLOGS</Link></li>
+    <li className='font-semibold'><Link to={'/aboutme'}>ABOUT</Link></li>
       
     </ul>
   </div>

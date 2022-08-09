@@ -7,7 +7,7 @@ import Projects from './Projects';
 
 const Home = () => {
     return (
-        <div className=''>
+        <div className='container mx-auto'>
             <Banner></Banner>
             <About></About>     
             <Projects></Projects>  

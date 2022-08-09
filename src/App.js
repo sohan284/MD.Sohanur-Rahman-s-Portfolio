@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './Pages/Shared/Header/Header';
 import Home from './Pages/Home/Home';
@@ -9,10 +8,11 @@ import AboutMe from './Pages/Home/AboutMe';
 import MotoParts from './Pages/DetailsProject/MotoParts';
 import GroceryShop from './Pages/DetailsProject/GroceryShop';
 import PerfectCouple from './Pages/DetailsProject/PerfectCouple';
+import AsSunnah from './Pages/DetailsProject/AsSunnah';
 
 function App() {
   return (
-    <div className='bg'>
+    <div className='bg mx-auto'>
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
@@ -22,6 +22,7 @@ function App() {
         <Route path='/project1' element={<MotoParts></MotoParts>}></Route>
         <Route path='/project2' element={<GroceryShop></GroceryShop>}></Route>
         <Route path='/project3' element={<PerfectCouple></PerfectCouple>}></Route>
+        <Route path='/project4' element={<AsSunnah></AsSunnah>}></Route>
       </Routes>
       <Footer></Footer>
 

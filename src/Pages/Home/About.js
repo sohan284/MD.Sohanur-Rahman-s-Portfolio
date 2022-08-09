@@ -10,7 +10,7 @@ const About = () => {
     return (
         <div class="hero aboutMe min-h-screen">
         <div class="hero-content flex-col lg:flex-row">
-        <div className='aboutImg'>
+        <div className='aboutImg mt-12'>
           <img data-aos="fade-up" src="https://i.ibb.co/ngTB5gS/sohan2-removebg-preview-1.png" class="max-w-sm  shadow-2xl h-80" />
           </div>
        
