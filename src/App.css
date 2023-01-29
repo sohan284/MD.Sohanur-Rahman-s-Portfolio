@@ -56,7 +56,10 @@
   border: 2px solid rgb(40, 12, 197);
 }
 .aboutMe img{
-  opacity: 70%;
+  opacity: 80%;
+  background-color:#0e3e664d;
+  width: 200px;
+  height: 200px;
   border-radius: 360px;
   
 }

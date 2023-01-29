@@ -14,6 +14,7 @@ const Header = () => {
         <li  className='font-semibold'><a href="/home#contact">CONTACT</a></li>
         <li  className='font-semibold'><Link to={'/blogs'}>BLOGS</Link></li>
         <li  className='font-semibold'><Link to={'/aboutme'}>ABOUT</Link></li>
+
         <li tabindex="0">
          
           
@@ -29,6 +30,7 @@ const Header = () => {
     <li  className='font-semibold'><a href="/home#contact">CONTACT</a></li>
     <li className='font-semibold'><Link to={'/blogs'}>BLOGS</Link></li>
     <li className='font-semibold'><Link to={'/aboutme'}>ABOUT</Link></li>
+    <a href='https://drive.google.com/file/d/1XrNxXJutfFfdtvuvBF2-gAVDSRz7-MB7/view?usp=share_link' target="_blank"  class="btn btn-sm mt-2 bg-accent text-black font-bold rounded-full hover:btn-success ">Get Resume</a>
       
     </ul>
   </div>

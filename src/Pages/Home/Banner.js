@@ -1,6 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Banner = () => {
+  const navigate = useNavigate();
+  const moreDetails = () => {
+    navigate('/aboutMe')
+  }
     return (
         <div class="hero bgimg min-h-screen bgBanner">
   <div class="hero-content flex-col lg:flex-row-reverse">
@@ -23,7 +28,9 @@ const Banner = () => {
           <a className="link link-hover ml-1 border-2 rounded-full" href='https://www.linkedin.com/in/sr-sohan-1621a0199/' target='blank'>
           <img width={23} src="https://i.ibb.co/h1bwTJB/linked-in-icon-18.png" alt="" /></a>
                 </div>
-      <a href='https://drive.google.com/file/d/1XrNxXJutfFfdtvuvBF2-gAVDSRz7-MB7/view?usp=share_link' target="_blank"  class="btn mt-16 foot">Download Resume</a>
+      
+      <button data-aos="fade-up"
+            data-aos-duration="300" onClick={moreDetails} class="btn mt-16 foot">Explore more</button>
     </div>
   </div>
   
