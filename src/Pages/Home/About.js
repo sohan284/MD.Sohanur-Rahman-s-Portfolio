@@ -8,12 +8,8 @@ const About = () => {
         navigate('/aboutMe')
     }
     return (
-        <div class="hero aboutMe min-h-screen">
+        <div class="hero aboutMe">
         <div class="hero-content flex-col lg:flex-row">
-        <div className='aboutImg mt-12'>
-          <img data-aos="fade-up" src="https://i.ibb.co/ngTB5gS/sohan2-removebg-preview-1.png" class="max-w-sm  shadow-2xl h-80" />
-          </div>
-       
           <div>
           <h1 data-aos="zoom-in"
      className='text-4xl text-center my-20 uppercase font-bold mx-auto container py-2 foot text-accent border-x-4'>About me</h1>
