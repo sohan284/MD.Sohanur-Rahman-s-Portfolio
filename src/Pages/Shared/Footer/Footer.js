@@ -7,7 +7,7 @@ const Footer = () => {
             <div data-aos="zoom-in" className='flex items-center pt-5  justify-evenly lg:flex-row md:flex-row flex-col w-full'>
                 <div  className='text-accent '>
                 <h1 className='font-bold text-3xl'>MD.Sohanur Rahman Sohan</h1>
-                    <h1 className='font-semibold text-lg'>Junior Web Developer</h1>
+                    <h2 className='font-semibold text-lg'>Junior Web Developer</h2>
                 </div>
                 <div className='flex  flex-col justify-center'>
                   
