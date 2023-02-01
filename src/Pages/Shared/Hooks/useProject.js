@@ -8,7 +8,5 @@ const useProject = () => {
         .then(data=>setProject(data))
     },[]);
     return [project,setProject]
-
 };
-
 export default useProject;
