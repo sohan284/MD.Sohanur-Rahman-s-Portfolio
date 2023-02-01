@@ -14,10 +14,7 @@ const Header = () => {
         <li  className='font-semibold'><a href="/home#contact">CONTACT</a></li>
         <li  className='font-semibold'><Link to={'/blogs'}>BLOGS</Link></li>
         <li  className='font-semibold'><Link to={'/aboutme'}>ABOUT</Link></li>
-
-        <li tabindex="0">
-         
-          
+        <li tabindex="0"> 
         </li>
         
       </ul>
