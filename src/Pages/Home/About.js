@@ -3,8 +3,6 @@ import { useNavigate } from 'react-router-dom';
 
 const About = () => {
   const navigate = useNavigate();
-
-
   return (
     <div class="aboutMe">
       <div class="flex-col lg:flex-row">
