@@ -64,13 +64,15 @@
   
 }
 .head{
-  background-image: url(https://i.ibb.co/vmcjKyT/d278c78f03859a337392b627794544bb.gif);
+  /* background-image: url(https://i.ibb.co/vmcjKyT/d278c78f03859a337392b627794544bb.gif); */
+  background-color: #0e3e664d;
 }
 .foot{
   background-color: #0e3e664d;
 }
 .bg{
-  background-image:url(https://i.ibb.co/cx5CX7Y/Inferior-Flowery-Bettong.webp);
+  background-color: #000000;
+  /* background-image:url(https://i.ibb.co/cx5CX7Y/Inferior-Flowery-Bettong.webp); */
   /* background-image:url(https://i.ibb.co/HHhLvq3/58359e76f4025d718bfa15904728ea4c.jpg); */
 }
 
