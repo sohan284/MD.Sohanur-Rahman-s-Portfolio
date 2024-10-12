@@ -1,33 +1,36 @@
 import React from "react";
 
-const AsSunnah = () => {
+const Taskify = () => {
   const project = {
-    id: 4,
-    name: "As Sunnah Store",
-    type: "E-commerce",
-    live: "https://as-sunnah-store.web.app/",
-    cscode: "https://github.com/sohan284/As_Sunnah_Store-Client",
-    sscode: "https://github.com/sohan284/As_Sunnah_Store-Server",
+    id: 5,
+    name: "Taskify",
+    type: "Management",
+    live: "https://taskify-app-self.vercel.app/",
+    cscode: "https://github.com/sohan284/taskify-app",
+    sscode: "https://github.com/sohan284/taskify-server",
     desc: [
-      "● Log in and signup with email and password.",
-      "● Also can log in by google.",
-      "● Home page has a banner and some sunnah products",
-      "● User can buy product and add to cart",
+      "● Log in and  sign up for Admin , client and team members ,",
+      "●  Admin have permission for delete users , clients and  thers also can assign project ,task , can delete and update status",
+      "●  Client and users can show dashboard also can assign project and task",
+      "●   Real time chatting with client or user.",
     ],
     tech: [
       "● Javascript",
       "● React",
       "● NodeJS",
       "● Mongodb",
-      "● Firebase",
+      "● Material Ui",
       "● HTML",
       "● CSS(Tailwind)",
+      "● Socket io",
+      "● Material",
     ],
     img: [
-      "https://i.ibb.co/3z1Tr74/Screenshot-32.png",
-      "https://i.ibb.co/8NtkCkM/Screenshot-34.png",
-      "https://i.ibb.co/BLjsVhY/Screenshot-35.png",
-      " https://i.ibb.co/C1BQhDn/Screenshot-36.png",
+      "https://i.ibb.co.com/ZGtttsX/Screenshot-4.png",
+      "https://i.ibb.co.com/GHNx9qY/Screenshot-5.png",
+      "https://i.ibb.co.com/vDW5Vjv/Screenshot-6.png",
+      "https://i.ibb.co.com/xsrbt8W/Screenshot-7.png",
+      "https://i.ibb.co.com/SwZtQnc/Screenshot-8.png",
     ],
   };
   return (
@@ -145,4 +148,4 @@ const AsSunnah = () => {
   );
 };
 
-export default AsSunnah;
+export default Taskify;

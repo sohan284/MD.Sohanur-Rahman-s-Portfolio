@@ -1,33 +1,35 @@
 import React from "react";
 
-const AsSunnah = () => {
+const Pro44 = () => {
   const project = {
-    id: 4,
-    name: "As Sunnah Store",
+    id: 6,
+    name: "44pro",
     type: "E-commerce",
-    live: "https://as-sunnah-store.web.app/",
-    cscode: "https://github.com/sohan284/As_Sunnah_Store-Client",
-    sscode: "https://github.com/sohan284/As_Sunnah_Store-Server",
+    live: "https://44pro.vercel.app/",
+    cscode: "https://github.com/sohan284/44pro",
+    sscode: "https://github.com/sohan284/44pro-server",
     desc: [
-      "● Log in and signup with email and password.",
-      "● Also can log in by google.",
-      "● Home page has a banner and some sunnah products",
-      "● User can buy product and add to cart",
+      "●  Log in and  signup with email otp",
+      "●  Can Customize items different part and add to cart",
+      "●  Procceed checkout and make payment by card",
+      "●  See order list after login",
     ],
     tech: [
       "● Javascript",
       "● React",
       "● NodeJS",
       "● Mongodb",
-      "● Firebase",
+      "● Material Ui",
       "● HTML",
       "● CSS(Tailwind)",
+      "● Nodemailer",
+      "● Material",
     ],
     img: [
-      "https://i.ibb.co/3z1Tr74/Screenshot-32.png",
-      "https://i.ibb.co/8NtkCkM/Screenshot-34.png",
-      "https://i.ibb.co/BLjsVhY/Screenshot-35.png",
-      " https://i.ibb.co/C1BQhDn/Screenshot-36.png",
+      "https://i.ibb.co.com/ZWzj6YW/Screenshot-10.png",
+      "https://i.ibb.co.com/LhStV8G/Screenshot-11.png",
+      "https://i.ibb.co.com/vvYfxFm/Screenshot-12.png",
+      "https://i.ibb.co.com/9VsQGR4/Screenshot-13.png",
     ],
   };
   return (
@@ -104,15 +106,11 @@ const AsSunnah = () => {
             </h1>
             <ul className="text-primary ml-5 text-lg">
               <div className="text-md font-semibold">
-                <ul className="text-primary ml-5 text-lg">
-                  <div className="text-md font-semibold">
-                    {project.tech.map((i) => (
-                      <li data-aos="fade-up" data-aos-duration="200">
-                        {i}
-                      </li>
-                    ))}
-                  </div>
-                </ul>
+                {project.tech.map((i) => (
+                  <li data-aos="fade-up" data-aos-duration="200">
+                    {i}
+                  </li>
+                ))}
               </div>
             </ul>
           </div>
@@ -145,4 +143,4 @@ const AsSunnah = () => {
   );
 };
 
-export default AsSunnah;
+export default Pro44;
