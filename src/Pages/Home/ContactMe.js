@@ -5,7 +5,6 @@ const ContactMe = () => {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         "service_mw5ra7q",
@@ -27,7 +26,6 @@ const ContactMe = () => {
       id="contact"
       className=" rounded-lg mb-10"
       >
-
       <h1 data-aos="zoom-in"
      className='text-4xl text-center my-20 uppercase font-bold mx-auto container py-2 foot text-accent border-x-8'>Contact</h1>
       <div  class="hero ">
