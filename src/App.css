@@ -123,3 +123,14 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes flame {
+  from {
+    transform: scale(1);
+    opacity: 1.8;
+  }
+  to {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
