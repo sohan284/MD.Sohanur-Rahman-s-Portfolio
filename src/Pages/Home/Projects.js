@@ -5,7 +5,6 @@ import ProjectOne from "./ProjectOne";
 
 const Projects = () => {
   const [project] = useProject();
-
   return (
     <div className="container min-h-screen mx-auto py-20">
       <motion.div

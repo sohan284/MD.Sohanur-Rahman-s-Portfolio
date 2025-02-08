@@ -430,7 +430,6 @@
 .btn-accent:hover::before {
   left: 100%;
 }
-
 /* Project Cards */
 .project-card {
   position: relative;
