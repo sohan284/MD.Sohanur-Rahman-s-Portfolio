@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 const ProjectOne = ({ project }) => {
   const { name, img, type, id } = project;
   const navigate = useNavigate();
-
   return (
     <motion.div
       whileHover={{ y: -10 }}
