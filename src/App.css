@@ -12,7 +12,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-.bgimg img{
+.bgimg img {
   border-radius: 60px;
 }
 
@@ -26,7 +26,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.aboutImg{
+.aboutImg {
   opacity: 85%;
 }
 
@@ -35,84 +35,91 @@
 }
 .typewriter h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid rgb(7, 177, 245); /* The typwriter cursor */
+  border-right: 0.15em solid rgb(7, 177, 245); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: rgb(5, 212, 248); }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(5, 212, 248);
+  }
 }
-.bttn:hover{
+.bttn:hover {
   background-color: rgba(122, 1, 1, 0.815);
   border: 2px solid rgb(40, 12, 197);
 }
-.aboutMe img{
+.aboutMe img {
   opacity: 80%;
-  background-color:#0e3e664d;
+  background-color: #0e3e664d;
   width: 200px;
   height: 200px;
   border-radius: 360px;
-  
 }
-.head{
+.head {
   /* background-image: url(https://i.ibb.co/vmcjKyT/d278c78f03859a337392b627794544bb.gif); */
   background-color: #0e3e664d;
 }
-.foot{
+.foot {
   background-color: #0e3e664d;
 }
-.bg{
+.bg {
   background-color: #000000;
   /* background-image:url(https://i.ibb.co/cx5CX7Y/Inferior-Flowery-Bettong.webp); */
   /* background-image:url(https://i.ibb.co/HHhLvq3/58359e76f4025d718bfa15904728ea4c.jpg); */
 }
 
-.prj{
- border-radius: 20px;
- background: linear-gradient(100deg, rgba(250, 0, 0, 0.479) 0%, rgba(0, 69, 97, 0.466) 55%);
- border: none;
- border-top-left-radius: 100px;
-
+.prj {
+  border-radius: 20px;
+  background: linear-gradient(
+    100deg,
+    rgba(250, 0, 0, 0.479) 0%,
+    rgba(0, 69, 97, 0.466) 55%
+  );
+  border: none;
+  border-top-left-radius: 100px;
 }
 
-
-.footerIcon img{
+.footerIcon img {
   width: 30px;
 }
-.contact{
+.contact {
   border: 2px solid silver;
 }
-.projectImg{
+.projectImg {
   transform: rotate(-10deg);
   width: 300px;
   margin-top: 30px;
 }
-.prj:hover img{
+.prj:hover img {
   transform: scale(1.2);
-  transition: transform .5s ease-in;
-  
+  transition: transform 0.5s ease-in;
 }
-.prjImg img{
+.prjImg img {
   width: 100%;
 }
-.project:hover{
+.project:hover {
   transform: scale(1.02);
   /* border: 1px solid silver; */
   box-shadow: 3px 3px 20px 3px silver;
-  transition: transform .2s linear;
+  transition: transform 0.2s linear;
 }
-.skills:hover{
+.skills:hover {
   transform: scale(1.02);
-  transition: transform .2s linear;
+  transition: transform 0.2s linear;
 }
 
 @keyframes App-logo-spin {
@@ -133,4 +140,400 @@
     transform: scale(1.1);
     opacity: 1;
   }
+}
+
+/* Gradient Overlay */
+.gradient-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Animated Background Shapes */
+.animated-shapes {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.5;
+  animation: floatAnimation 20s infinite linear;
+}
+
+.shape-1 {
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 69, 0, 0.15);
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.shape-2 {
+  width: 400px;
+  height: 400px;
+  background: rgba(0, 191, 255, 0.15);
+  top: 50%;
+  right: 15%;
+  animation-delay: -5s;
+}
+
+.shape-3 {
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 215, 0, 0.15);
+  bottom: 20%;
+  left: 20%;
+  animation-delay: -10s;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate(100px, 100px) rotate(120deg);
+  }
+  66% {
+    transform: translate(-50px, 50px) rotate(240deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+  }
+}
+
+/* Particle Effect */
+.particle {
+  position: fixed;
+  width: 3px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+  border-radius: 50%;
+  animation: particleFloat 5s linear forwards;
+}
+
+@keyframes particleFloat {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) scale(0);
+    opacity: 0;
+  }
+}
+
+/* Smooth Page Transitions */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-transition-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Enhanced Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #ff4500, #ff8c00);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #ff8c00, #ff4500);
+}
+
+/* Text Selection */
+::selection {
+  background: rgba(255, 69, 0, 0.3);
+  color: #fff;
+}
+
+/* Hover Effects */
+.hover-glow {
+  transition: all 0.3s ease;
+}
+
+.hover-glow:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(255, 69, 0, 0.3);
+}
+
+/* Code Rain Effect */
+.code-rain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #0a192f 0%, #112240 100%);
+  opacity: 0.9;
+}
+
+.code-rain::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M25 0L50 25L25 50L0 25L25 0z' fill='%239C92AC' fill-opacity='0.05'/%3E%3C/svg%3E");
+  animation: rain 20s linear infinite;
+}
+
+@keyframes rain {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+/* Welcome Text Animation */
+.welcome-text {
+  position: relative;
+  display: inline-block;
+}
+
+.welcome-text::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.welcome-text:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Stats Container */
+.stats-container {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat {
+  position: relative;
+}
+
+.stat::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 70%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.stat:last-child::after {
+  display: none;
+}
+
+/* Tech Stack Tags */
+.tech-stack span {
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-stack span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.tech-stack span:hover::before {
+  left: 100%;
+}
+
+/* Enhanced Button Styles */
+.btn-accent {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-accent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.btn-accent:hover::before {
+  left: 100%;
+}
+
+/* Project Cards */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Project Details Page */
+.project-details {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+.tech-stack-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+.tech-stack-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Feature List */
+.feature-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+}
+
+/* Image Gallery */
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery-item img {
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Button Animations */
+.action-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.action-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.action-button:hover::after {
+  left: 100%;
 }
