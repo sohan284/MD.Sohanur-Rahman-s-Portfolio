@@ -22,29 +22,43 @@ const ContactMe = () => {
       );
   };
   return (
-    <div 
-      id="contact"
-      className=" rounded-lg mb-10"
+    <div id="contact" className=" rounded-lg mb-10">
+      <h1
+        data-aos="zoom-in"
+        className="text-4xl text-center my-20 uppercase font-bold mx-auto container py-2 foot text-accent border-x-8"
       >
-      <h1 data-aos="zoom-in"
-     className='text-4xl text-center my-20 uppercase font-bold mx-auto container py-2 foot text-accent border-x-8'>Contact</h1>
-      <div  class="hero ">
+        Contact
+      </h1>
+      <div class="hero ">
         <div class="hero-content flex-col lg:flex-row-reverse">
           <div class="text-center lg:text-left lg:pl-10 w-1/2">
-            <h1 data-aos="fade-up"
-     data-aos-duration="200"  class="text-5xl text-primary font-bold">Get In Touch!</h1>
-            <p  data-aos="fade-up"
-     data-aos-duration="300" class="py-6 text-primary">
+            <h1
+              data-aos="fade-up"
+              data-aos-duration="200"
+              class="text-5xl text-primary font-bold"
+            >
+              Get In Touch!
+            </h1>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="300"
+              class="py-6 text-primary"
+            >
               Send me email if you think I can help you out with any of your web
               development related projects.
             </p>
           </div>
-          <div  data-aos="fade-up"
-     data-aos-duration="300" class="card flex-shrink-0 skills w-full max-w-sm shadow-2xl bg-black contact">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="300"
+            class="card flex-shrink-0 skills w-full max-w-sm shadow-2xl bg-black contact"
+          >
             <form ref={form} onSubmit={sendEmail} class="card-body">
               <div class="form-control">
                 <label class="label">
-                  <span class="label-text text-primary font-semibold">Name</span>
+                  <span class="label-text text-primary font-semibold">
+                    Name
+                  </span>
                 </label>
                 <input
                   required
@@ -56,7 +70,9 @@ const ContactMe = () => {
               </div>
               <div class="form-control">
                 <label class="label">
-                  <span class="label-text text-primary font-semibold">Email</span>
+                  <span class="label-text text-primary font-semibold">
+                    Email
+                  </span>
                 </label>
                 <input
                   required
@@ -68,7 +84,9 @@ const ContactMe = () => {
               </div>
               <div class="form-control">
                 <label class="label">
-                  <span class="label-text text-primary font-semibold">Message</span>
+                  <span class="label-text text-primary font-semibold">
+                    Message
+                  </span>
                 </label>
                 <textarea
                   className="bg-transparent bg-[#bebebe] text-black border-gray-600 border rounded"
