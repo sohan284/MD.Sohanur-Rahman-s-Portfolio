@@ -1,181 +1,131 @@
 [
-    {
-        "id": 5,
-        "name": "Taskify",
-        "type": "Management",
-        "live": "https://taskify-app-self.vercel.app/",
-        "cscode": "https://github.com/sohan284/taskify-app",
-        "sscode": "https://github.com/sohan284/taskify-server",
-        "desc": [
-            "● Log in and  sign up for Admin , client and team members ,",
-            "●  Admin have permission for delete users , clients and  thers also can assign project ,task , can delete and update status",
-            "●  Client and users can show dashboard also can assign project and task",
-            "●   Real time chatting with client or user."
-        ],
-        "tech": [
-            "● Javascript",
-            "● React",
-            "● NodeJS",
-            "● Mongodb",
-            "● Material Ui",
-            "● HTML",
-            "● CSS(Tailwind)",
-            "● Socket io",
-            "● Material"
-        ],
-        "img": [
-            "https://i.ibb.co.com/ZGtttsX/Screenshot-4.png",
-            "https://i.ibb.co.com/GHNx9qY/Screenshot-5.png",
-            "https://i.ibb.co.com/vDW5Vjv/Screenshot-6.png",
-            "https://i.ibb.co.com/xsrbt8W/Screenshot-7.png",
-            "https://i.ibb.co.com/SwZtQnc/Screenshot-8.png"
-        ]
-    },
-    {
-        "id": 6,
-        "name": "44pro",
-        "type": "E-commerce",
-        "live": "https://44pro.vercel.app/",
-        "cscode": "https://github.com/sohan284/44pro",
-        "sscode": "https://github.com/sohan284/44pro-server",
-        "desc": [
-            "●  Log in and  signup with email otp",
-            "●  Can Customize items different part and add to cart",
-            "●  Procceed checkout and make payment by card",
-            "●  See order list after login"
-        ],
-        "tech": [
-            "● Javascript",
-            "● React",
-            "● NodeJS",
-            "● Mongodb",
-            "● Material Ui",
-            "● HTML",
-            "● CSS(Tailwind)",
-            "● Nodemailer",
-            "● Material"
-        ],
-        "img": [
-            "https://i.ibb.co.com/ZWzj6YW/Screenshot-10.png",
-            "https://i.ibb.co.com/LhStV8G/Screenshot-11.png",
-            "https://i.ibb.co.com/vvYfxFm/Screenshot-12.png",
-            "https://i.ibb.co.com/9VsQGR4/Screenshot-13.png"
-        ]
-    },
-    {
-        "id": 4,
-        "name": "As Sunnah",
-        "type": "E-commerce",
-        "live": "https://as-sunnah-store.web.app/",
-        "cscode": "https://github.com/sohan284/As_Sunnah_Store-Client",
-        "sscode": "https://github.com/sohan284/As_Sunnah_Store-Server",
-        "desc": [
-            "● Log in and signup with email and password.",
-            "● Also can log in by google.",
-            "● Home page has a banner and some sunnah products",
-            "● User can buy product and add to cart"
-        ],
-        "tech": [
-            "● Javascript",
-            "● React",
-            "● NodeJS",
-            "● Mongodb",
-            "● Firebase",
-            "● HTML",
-            "● CSS(Tailwind)"
-        ],
-        "img": [
-            "https://i.ibb.co/3z1Tr74/Screenshot-32.png",
-            "https://i.ibb.co/8NtkCkM/Screenshot-34.png",
-            "https://i.ibb.co/BLjsVhY/Screenshot-35.png",
-            " https://i.ibb.co/C1BQhDn/Screenshot-36.png"
-        ]
-    },
-    {
-        "id": 1,
-        "name": "Moto Parts",
-        "type": "Menufacturer",
-        "live": "https://moto-parts-c256e.web.app/",
-        "cscode": "https://github.com/sohan284/Moto_Parts_manufacturer-client-site",
-        "sscode": "https://github.com/sohan284/Moto_Parts_manufacturer-server-site",
-        "desc": [
-            "● Log in and signup with email and password.Also can log in by google.",
-            "● Home page has a banner , some bike Parts and user review section",
-            "● User can order quantity if logged in ",
-            "● User can add review and can manage his orders."
-        ],
-        "tech": [
-            "● Javascript",
-            "● React",
-            "● NodeJS",
-            "● Mongodb",
-            "● Firebase",
-            "● HTML",
-            "● CSS(Tailwind)"
-        ],
-        "img": [
-            "https://i.ibb.co/v4ShSrW/Screenshot-10.png",
-            "https://i.ibb.co/rstWKps/Screenshot-11.png",
-            "https://i.ibb.co/nmZgwsd/Screenshot-12.png",
-            "https://i.ibb.co/K5SXqXK/Screenshot-14.png"
-        ]
-    },
-    {
-        "id": 2,
-        "name": "Grocery Shop",
-        "type": "E-commerce",
-        "live": "https://grocery-shop-c9e00.web.app/",
-        "cscode": "https://github.com/sohan284/Grocery_Shop_Client-site",
-        "sscode": "https://github.com/sohan284/Grocery_Shop_Server-site",
-        "desc": [
-            "● Log in and signup with email and password.",
-            "● Also can log in by google.",
-            "● Home page has a banner and an inventory section with some grocery items",
-            "● User can add and remove items if he is logged in .."
-        ],
-        "tech": [
-            "● Javascript",
-            "● React",
-            "● NodeJS",
-            "● Mongodb",
-            "● Firebase",
-            "● HTML",
-            "● CSS(Bootstrap)"
-        ],
-        "img": [
-            "https://i.ibb.co/HXTymCh/Screenshot-21.png",
-            "https://i.ibb.co/4mMZqWM/Screenshot-22.png",
-            "https://i.ibb.co/sKPT2jg/Screenshot-23.png",
-            "https://i.ibb.co/YQ6vhKd/Screenshot-24.png"
-        ]
-    },
-    {
-        "id": 3,
-        "name": "Perfect Couple",
-        "type": "Photography",
-        "live": "https://perfect-couple-90811.web.app/",
-        "cscode": "https://github.com/sohan284/Perfect-Couple-firebase",
-        "sscode": "https://github.com/sohan284/Perfect-Couple-firebase",
-        "desc": [
-            "● Log in and signup with email and password.Also can log in by google",
-            "● Also can log in by google.",
-            "● Homepage has a banner and a services section with some photography services.",
-            "● User can checkout if he is logged in ."
-        ],
-        "tech": [
-            "● Javascript",
-            "● React",
-            "● Netlify",
-            "● React Router",
-            "● Firebase",
-            "● HTML",
-            "● CSS(Tailwind)"
-        ],
-        "img": [
-            "https://i.ibb.co/q93RJv5/Screenshot-26.png",
-            "https://i.ibb.co/D4b38WG/Screenshot-27.png",
-            "https://i.ibb.co/zx51LZq/Screenshot-28.png",
-            "https://i.ibb.co/rv3pfp7/Screenshot-29.png"
-        ]
-    }
+  {
+    "id": 5,
+    "name": "Taskify",
+    "title": "Taskify - Project Management Platform",
+    "type": "Management",
+    "live": "https://taskify-app-self.vercel.app/",
+    "github": "https://github.com/sohan284/taskify-app",
+    "sscode": "https://github.com/sohan284/taskify-server",
+    "description": "A comprehensive project management platform with multi-role authentication, real-time chat functionality, and task assignment capabilities for teams and clients.",
+    "features": [
+      "Multi-role authentication system (Admin, Client, Team Member)",
+      "Admin dashboard with user management capabilities",
+      "Project and task assignment with status tracking",
+      "Real-time chat between team members and clients",
+      "Responsive dashboard interface"
+    ],
+    "tech": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Socket.io",
+      "Material UI",
+      "Tailwind CSS",
+      "JWT Authentication"
+    ],
+    "tags": [
+      "MERN Stack",
+      "Real-time Chat",
+      "Project Management",
+      "Socket.io",
+      "Dashboard",
+      "Authentication"
+    ],
+    "image": "https://i.ibb.co.com/ZGtttsX/Screenshot-4.png",
+    "gallery": [
+      "https://i.ibb.co.com/ZGtttsX/Screenshot-4.png",
+      "https://i.ibb.co.com/GHNx9qY/Screenshot-5.png",
+      "https://i.ibb.co.com/vDW5Vjv/Screenshot-6.png",
+      "https://i.ibb.co.com/xsrbt8W/Screenshot-7.png",
+      "https://i.ibb.co.com/SwZtQnc/Screenshot-8.png"
+    ],
+    "category": "Web Application",
+    "year": "2023"
+  },
+  {
+    "id": 6,
+    "name": "44pro",
+    "title": "44pro - Custom Product E-commerce",
+    "type": "E-commerce",
+    "live": "https://44pro.vercel.app/",
+    "github": "https://github.com/sohan284/44pro",
+    "sscode": "https://github.com/sohan284/44pro-server",
+    "description": "A customizable e-commerce platform that allows users to personalize products before purchase, with secure authentication and payment processing.",
+    "features": [
+      "Email OTP authentication system",
+      "Product customization interface",
+      "Shopping cart functionality",
+      "Stripe payment integration",
+      "Order history tracking"
+    ],
+    "tech": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Nodemailer",
+      "Material UI",
+      "Tailwind CSS",
+      "Stripe API"
+    ],
+    "tags": [
+      "E-commerce",
+      "MERN Stack",
+      "Payment Integration",
+      "Product Customization",
+      "OTP Authentication",
+      "Responsive Design"
+    ],
+    "image": "https://i.ibb.co.com/ZWzj6YW/Screenshot-10.png",
+    "gallery": [
+      "https://i.ibb.co.com/ZWzj6YW/Screenshot-10.png",
+      "https://i.ibb.co.com/LhStV8G/Screenshot-11.png",
+      "https://i.ibb.co.com/vvYfxFm/Screenshot-12.png",
+      "https://i.ibb.co.com/9VsQGR4/Screenshot-13.png"
+    ],
+    "category": "E-commerce",
+    "year": "2023"
+  },
+  {
+    "id": 4,
+    "name": "As Sunnah",
+    "title": "As Sunnah - Islamic Product Store",
+    "type": "E-commerce",
+    "live": "https://as-sunnah-store.web.app/",
+    "github": "https://github.com/sohan284/As_Sunnah_Store-Client",
+    "sscode": "https://github.com/sohan284/As_Sunnah_Store-Server",
+    "description": "An e-commerce platform for Islamic products with user authentication, product browsing, and cart functionality.",
+    "features": [
+      "Email and password authentication",
+      "Google OAuth integration",
+      "Product catalog with categories",
+      "Shopping cart functionality",
+      "Responsive design"
+    ],
+    "tech": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Firebase Authentication",
+      "Tailwind CSS",
+      "Express.js"
+    ],
+    "tags": [
+      "E-commerce",
+      "MERN Stack",
+      "Firebase Auth",
+      "Shopping Cart",
+      "Google OAuth",
+      "Responsive Design"
+    ],
+    "image": "https://i.ibb.co/3z1Tr74/Screenshot-32.png",
+    "gallery": [
+      "https://i.ibb.co/3z1Tr74/Screenshot-32.png",
+      "https://i.ibb.co/8NtkCkM/Screenshot-34.png",
+      "https://i.ibb.co/BLjsVhY/Screenshot-35.png",
+      "https://i.ibb.co/C1BQhDn/Screenshot-36.png"
+    ],
+    "category": "E-commerce",
+    "year": "2022"
+  }
 ]
