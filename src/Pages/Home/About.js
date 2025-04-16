@@ -224,14 +224,14 @@ const About = () => {
           data-aos-delay="300"
           className="mt-16 text-center"
         >
-          <button
+          {/* <button
             onClick={() => navigate("/portfolio")}
             className="group relative inline-flex items-center justify-center overflow-hidden rounded-full border-2 border-accent px-8 py-3 font-bold text-white transition-all duration-300 hover:bg-accent focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-gray-900"
           >
             <span className="absolute inset-0 bg-gradient-to-r from-accent to-purple-600 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
             <Globe className="mr-2 h-5 w-5" />
             <span className="relative">View My Projects</span>
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

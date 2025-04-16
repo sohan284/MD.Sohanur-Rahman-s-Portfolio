@@ -6,6 +6,7 @@ import ProjectOne from "./ProjectOne";
 const Projects = () => {
   const [project] = useProject();
   const [hoveredId, setHoveredId] = useState(null);
+  console.log(project);
 
   // Subtle background color transition effect for the entire section
   const sectionVariants = {
