@@ -35,7 +35,7 @@ const Projects = () => {
 
   return (
     <motion.div
-      className="relative container min-h-screen mx-auto py-24 px-4 overflow-hidden"
+      className="relative container min-h-screen mx-auto py-24 px-4 overflow-hidden "
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.1 }}

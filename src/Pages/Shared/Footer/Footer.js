@@ -5,9 +5,8 @@ import {
   MapPin,
   Github,
   Linkedin,
-  Twitter,
-  ExternalLink,
   ArrowUp,
+  Facebook,
 } from "lucide-react";
 
 const Footer = () => {
@@ -19,7 +18,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-900 text-white pt-16 pb-8 px-6 relative">
+    <footer className="bg-gradient-to-b from-[#11293b] to-[#0a192f] text-white pt-16 pb-8 px-6 relative ">
       {/* Scroll to top button */}
       <button
         onClick={scrollToTop}
@@ -34,7 +33,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Column 1: About */}
           <div className="transition-all duration-500">
-            <h2 className="font-bold text-2xl mb-4 text-white relative inline-block after:content-[''] after:block after:w-12 after:h-1 after:bg-accent after:mt-1">
+            <h2 className="font-bold text-2xl mb-4 text-purple-400 relative inline-block after:content-[''] after:block after:w-12 after:h-1 after:bg-accent after:mt-1">
               About Me
             </h2>
             <h3 className="font-bold text-xl text-accent mb-3 hover:text-primary transition-colors duration-300">
@@ -46,7 +45,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4 mt-4">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/sohan284"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-accent transition-colors duration-300 hover:scale-110 transform"
@@ -54,7 +53,7 @@ const Footer = () => {
                 <Github size={22} />
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/sr-sohan-1621a0199/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-accent transition-colors duration-300 hover:scale-110 transform"
@@ -62,19 +61,19 @@ const Footer = () => {
                 <Linkedin size={22} />
               </a>
               <a
-                href="https://twitter.com/yourusername"
+                href="https://www.facebook.com/SrSohan2748"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-accent transition-colors duration-300 hover:scale-110 transform"
               >
-                <Twitter size={22} />
+                <Facebook size={22} />
               </a>
             </div>
           </div>
 
           {/* Column 2: Contact Info */}
           <div className="transition-all duration-500">
-            <h2 className="font-bold text-2xl mb-4 text-white relative inline-block after:content-[''] after:block after:w-12 after:h-1 after:bg-accent after:mt-1">
+            <h2 className="font-bold text-2xl mb-4 text-purple-400 relative inline-block after:content-[''] after:block after:w-12 after:h-1 after:bg-accent after:mt-1">
               Contact Info
             </h2>
             <div className="flex flex-col gap-4 text-gray-300">
@@ -125,7 +124,7 @@ const Footer = () => {
 
           {/* Column 3: Quick Links */}
           <div className="transition-all duration-500">
-            <h2 className="font-bold text-2xl mb-4 text-white relative inline-block after:content-[''] after:block after:w-12 after:h-1 after:bg-accent after:mt-1">
+            <h2 className="font-bold text-2xl mb-4 text-purple-400 relative inline-block after:content-[''] after:block after:w-12 after:h-1 after:bg-accent after:mt-1">
               Quick Links
             </h2>
             <ul className="space-y-2">
@@ -151,7 +150,7 @@ const Footer = () => {
 
           {/* Column 4: Newsletter */}
           <div className="transition-all duration-500">
-            <h2 className="font-bold text-2xl mb-4 text-white relative inline-block after:content-[''] after:block after:w-12 after:h-1 after:bg-accent after:mt-1">
+            <h2 className="font-bold text-2xl mb-4 text-purple-400 relative inline-block after:content-[''] after:block after:w-12 after:h-1 after:bg-accent after:mt-1">
               Stay Connected
             </h2>
             <p className="text-gray-300 mb-4">
