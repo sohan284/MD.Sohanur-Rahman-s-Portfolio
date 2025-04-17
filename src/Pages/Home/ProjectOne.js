@@ -1,9 +1,9 @@
 import React from "react";
-import { motion } from "framer-motion";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { motion, AnimatePresence } from "framer-motion";
+import { FaGithub, FaExternalLinkAlt, FaAngleDown } from "react-icons/fa";
 
 const ProjectOne = ({ project, isHovered }) => {
-  const { title, description, image, tags, github, live } = project;
+  const { title, description, image, tags, github, live, features } = project;
 
   return (
     <div className="h-full flex flex-col">
@@ -60,7 +60,7 @@ const ProjectOne = ({ project, isHovered }) => {
 
         <p className="text-gray-300 mb-4 flex-1">{description}</p>
 
-        <div className="flex flex-wrap gap-2 mt-auto">
+        <div className="flex flex-wrap gap-2 mb-4">
           {tags.map((tag, index) => (
             <motion.span
               key={index}
@@ -73,6 +73,61 @@ const ProjectOne = ({ project, isHovered }) => {
               {tag}
             </motion.span>
           ))}
+        </div>
+
+        {/* Features Accordion */}
+        <div className="mt-auto w-full">
+          <motion.div
+            className="bg-gray-800/50 rounded-lg overflow-hidden"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{
+              height: isHovered ? "auto" : 0,
+              opacity: isHovered ? 1 : 0,
+            }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+          >
+            <AnimatePresence>
+              {isHovered && (
+                <motion.div
+                  initial={{ y: -20, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  exit={{ y: -20, opacity: 0 }}
+                  transition={{ duration: 0.2, delay: 0.1 }}
+                  className="p-4"
+                >
+                  <div className="flex items-center mb-2">
+                    <motion.div
+                      animate={{ rotate: isHovered ? 180 : 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="mr-2 text-accent"
+                    >
+                      <FaAngleDown />
+                    </motion.div>
+                    <h4 className="text-md font-semibold text-accent">
+                      Key Features
+                    </h4>
+                  </div>
+                  <ul className="list-disc pl-5 space-y-1">
+                    {features &&
+                      features.map((feature, index) => (
+                        <motion.li
+                          key={index}
+                          initial={{ x: -10, opacity: 0 }}
+                          animate={{ x: 0, opacity: 1 }}
+                          transition={{
+                            duration: 0.2,
+                            delay: 0.1 + index * 0.05,
+                          }}
+                          className="text-sm text-gray-300"
+                        >
+                          {feature}
+                        </motion.li>
+                      ))}
+                  </ul>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </motion.div>
         </div>
       </div>
     </div>

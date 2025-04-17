@@ -1,5 +1,104 @@
 [
   {
+    "id": 1,
+    "name": "Rentpad Homes",
+    "title": "Rentpad Homes - Rental Property Management Platform",
+    "type": "Real Estate Management",
+    "live": "https://rentpadhomes.com/",
+    "github": "https://github.com/sohan284/real-state-client",
+    "sscode": "https://github.com/sohan284/real-state-server",
+    "description": "A comprehensive rental property management platform that connects property owners with tenants, featuring multi-role authentication, real-time communication, and property listing management.",
+    "features": [
+      "Multi-role authentication system (Admin, Property Owner, Tenant)",
+      "Property listing management for owners",
+      "Advanced property search and filtering for tenants",
+      "Real-time chat between owners, tenants, and admin",
+      "Admin dashboard with user and property oversight",
+      "Automated notifications and email alerts via Nodemailer",
+      "Responsive design for mobile and desktop users"
+    ],
+    "tech": [
+      "React",
+      "Redux",
+      "Node.js",
+      "MongoDB",
+      "Mongoose",
+      "Socket.io",
+      "Ant Design",
+      "Nodemailer",
+      "JWT Authentication"
+    ],
+    "tags": [
+      "MERN Stack",
+      "Real Estate",
+      "Rental Platform",
+      "Real-time Chat",
+      "Property Management",
+      "Socket.io",
+      "Redux"
+    ],
+    "image": "https://i.ibb.co.com/k6KG0kbv/Screenshot-2025-04-17-100341.png",
+    "gallery": [
+      "https://i.ibb.co.com/k6KG0kbv/Screenshot-2025-04-17-100341.png",
+      "https://i.ibb.co.com/GHNx9qY/Screenshot-5.png",
+      "https://i.ibb.co.com/vDW5Vjv/Screenshot-6.png",
+      "https://i.ibb.co.com/xsrbt8W/Screenshot-7.png",
+      "https://i.ibb.co.com/SwZtQnc/Screenshot-8.png"
+    ],
+    "category": "Real Estate Web Application",
+    "year": "2025"
+  },
+  {
+    "id": 2,
+    "name": "Hypno4u",
+    "title": "Hypno4u - Motivational Audio Platform",
+    "type": "Motivational Audio Website",
+    "live": "https://hypno4u.com/",
+    "github": "https://github.com/sohan284/hypno4u-client",
+    "sscode": "https://github.com/sohan284/hypno4u-server",
+    "description": "A premium motivational audio platform offering curated collections of inspirational content with subscription-based access, personalized recommendations, and seamless user experience.",
+    "features": [
+      "Secure multi-role authentication system (Admin, Content Creator, User)",
+      "Subscription plan management with tiered access levels",
+      "Personalized audio recommendations based on user preferences",
+      "Audio categorization by mood, goal, and creator",
+      "Admin dashboard for content management and user analytics",
+      "Secure payment integration for subscription purchases"
+    ],
+    "tech": [
+      "React",
+      "Redux",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "JWT Authentication",
+      "Stripe Payment",
+      "AWS S3 for audio storage",
+      "Responsive UI framework",
+      "Audio streaming optimization"
+    ],
+    "tags": [
+      "MERN Stack",
+      "Motivational Platform",
+      "Audio Streaming",
+      "Subscription Service",
+      "Personal Development",
+      "User Authentication",
+      "Payment Integration"
+    ],
+    "image": "https://i.ibb.co.com/tPJnD436/Screenshot-2025-04-17-110449.png",
+    "gallery": [
+      "https://i.ibb.co.com/k6KG0kbv/Screenshot-2025-04-17-100341.png",
+      "https://i.ibb.co.com/GHNx9qY/Screenshot-5.png",
+      "https://i.ibb.co.com/vDW5Vjv/Screenshot-6.png",
+      "https://i.ibb.co.com/xsrbt8W/Screenshot-7.png",
+      "https://i.ibb.co.com/SwZtQnc/Screenshot-8.png"
+    ],
+    "category": "Audio Subscription Platform",
+    "year": "2024"
+  },
+  {
     "id": 5,
     "name": "Taskify",
     "title": "Taskify - Project Management Platform",
