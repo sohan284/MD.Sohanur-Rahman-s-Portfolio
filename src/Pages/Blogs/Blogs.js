@@ -14,7 +14,7 @@ const Blogs = () => {
             content: "In this comprehensive guide, we'll explore advanced React patterns, state management solutions, and performance optimization techniques...",
             category: "Development",
             date: "2024-12-15",
-            author: "John Doe",
+            author: "Zakir Hossain",
             readTime: "8 min read",
             tags: ["React", "JavaScript", "Performance"],
             image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=250&fit=crop",
@@ -27,7 +27,7 @@ const Blogs = () => {
             content: "Web design is evolving rapidly with new technologies and user expectations. From AI-generated layouts to micro-interactions...",
             category: "Design",
             date: "2024-12-10",
-            author: "Jane Smith",
+            author: "Shoaib Hossain",
             readTime: "6 min read",
             tags: ["Design", "UI/UX", "Trends"],
             image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=400&h=250&fit=crop"
