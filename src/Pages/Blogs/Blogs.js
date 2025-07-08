@@ -63,7 +63,7 @@ const Blogs = () => {
             content: "Responsive design is more than just breakpoints. Learn about fluid layouts, flexible images, and modern CSS techniques...",
             category: "Design",
             date: "2024-11-20",
-            author: "Alex Chen",
+            author: "Jibon Islam",
             readTime: "7 min read",
             tags: ["CSS", "Responsive", "Mobile"],
             image: "https://images.unsplash.com/photo-1555421689-491a97ff2040?w=400&h=250&fit=crop"
@@ -75,7 +75,7 @@ const Blogs = () => {
             content: "API security is crucial in today's interconnected world. We'll cover authentication, authorization, rate limiting...",
             category: "Security",
             date: "2024-11-15",
-            author: "David Kumar",
+            author: "Shaheed Islam",
             readTime: "9 min read",
             tags: ["Security", "API", "Backend"],
             image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=250&fit=crop"
