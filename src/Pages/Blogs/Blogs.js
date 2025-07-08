@@ -39,7 +39,7 @@ const Blogs = () => {
             content: "DevOps has transformed how teams build and deploy software. In this article, we'll cover CI/CD pipelines, containerization...",
             category: "DevOps",
             date: "2024-12-05",
-            author: "Mike Johnson",
+            author: "Zaheed Hossain",
             readTime: "12 min read",
             tags: ["DevOps", "CI/CD", "Docker"],
             image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=400&h=250&fit=crop"
@@ -51,7 +51,7 @@ const Blogs = () => {
             content: "Machine learning doesn't have to be intimidating. This beginner-friendly guide covers essential concepts...",
             category: "AI/ML",
             date: "2024-11-28",
-            author: "Sarah Wilson",
+            author: "Sabbir Hossain",
             readTime: "10 min read",
             tags: ["Machine Learning", "Python", "AI"],
             image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=250&fit=crop"

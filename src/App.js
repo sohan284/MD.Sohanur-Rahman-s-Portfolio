@@ -16,7 +16,6 @@ import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 function App() {
-  // Add particle effect
   useEffect(() => {
     const createParticle = () => {
       const particle = document.createElement("div");
