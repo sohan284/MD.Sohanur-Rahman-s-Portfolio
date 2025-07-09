@@ -51,7 +51,6 @@ function App() {
 
       <Header />
 
-      {/* Enhanced Cursor Animation */}
       <AnimatedCursor
         innerSize={8}
         outerSize={35}
