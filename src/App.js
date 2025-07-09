@@ -39,7 +39,6 @@ function App() {
       transition={{ duration: 0.5 }}
       className="bg mx-auto relative"
     >
-      {/* Gradient Overlay */}
       <div className="gradient-overlay"></div>
 
       {/* Animated Background Shapes */}
