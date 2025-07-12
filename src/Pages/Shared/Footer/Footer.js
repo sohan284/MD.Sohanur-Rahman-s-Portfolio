@@ -29,9 +29,7 @@ const Footer = () => {
       </button>
 
       <div className="max-w-7xl mx-auto">
-        {/* Main footer content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-          {/* Column 1: About */}
           <div className="transition-all duration-500">
             <h2 className="font-bold text-2xl mb-4 text-purple-400 relative inline-block after:content-[''] after:block after:w-12 after:h-1 after:bg-accent after:mt-1">
               About Me
@@ -71,7 +69,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Column 2: Contact Info */}
           <div className="transition-all duration-500">
             <h2 className="font-bold text-2xl mb-4 text-purple-400 relative inline-block after:content-[''] after:block after:w-12 after:h-1 after:bg-accent after:mt-1">
               Contact Info
