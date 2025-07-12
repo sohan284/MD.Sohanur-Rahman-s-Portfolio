@@ -14,6 +14,7 @@ import Pro44 from "./Pages/DetailsProject/44pro";
 import AnimatedCursor from "react-animated-cursor";
 import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import FloatingActionButton from "./Pages/Shared/FloatingActionButton";
 
 function App() {
   useEffect(() => {
@@ -101,6 +102,7 @@ function App() {
       </AnimatePresence>
 
       <Footer />
+      <FloatingActionButton />
     </motion.div>
   );
 }
