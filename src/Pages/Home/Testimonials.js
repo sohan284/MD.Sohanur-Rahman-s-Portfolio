@@ -64,7 +64,6 @@ const Testimonials = () => {
 
   return (
     <section className="py-24 bg-gradient-to-b from-gray-950 via-gray-900 to-black relative overflow-hidden">
-      {/* Background decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute top-[20%] right-[10%] w-96 h-96 bg-accent/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-[30%] left-[5%] w-80 h-80 bg-purple-600/5 rounded-full blur-3xl"></div>
