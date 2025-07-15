@@ -86,7 +86,6 @@ const Header = () => {
             </a>
           </nav>
 
-          {/* Mobile Menu Toggle Button */}
           <button
             className="md:hidden text-white focus:outline-none"
             onClick={toggleMobileMenu}
@@ -100,7 +99,6 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
       {mobileMenuOpen && (
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -132,7 +130,6 @@ const Header = () => {
                 </MobileNavLink>
               ))}
 
-              {/* Mobile Resume Button */}
               <a
                 href="https://drive.google.com/file/d/19PCXNKLW-y7rXLHlLP1VIN_PGcn-1IVr/view?usp=drive_link"
                 target="_blank"
@@ -151,7 +148,6 @@ const Header = () => {
   );
 };
 
-// Desktop Navigation Link Component
 const NavLink = ({ children, to, active, isHash }) => {
   const Component = isHash ? "a" : Link;
 
