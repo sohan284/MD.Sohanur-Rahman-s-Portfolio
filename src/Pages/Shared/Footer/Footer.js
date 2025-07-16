@@ -118,8 +118,6 @@ const Footer = () => {
               </div>
             </div>
           </div>
-
-          {/* Column 3: Quick Links */}
           <div className="transition-all duration-500">
             <h2 className="font-bold text-2xl mb-4 text-purple-400 relative inline-block after:content-[''] after:block after:w-12 after:h-1 after:bg-accent after:mt-1">
               Quick Links
@@ -145,7 +143,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 4: Newsletter */}
           <div className="transition-all duration-500">
             <h2 className="font-bold text-2xl mb-4 text-purple-400 relative inline-block after:content-[''] after:block after:w-12 after:h-1 after:bg-accent after:mt-1">
               Stay Connected
@@ -173,10 +170,8 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Divider */}
         <div className="border-t border-gray-800 my-8"></div>
 
-        {/* Footer Bottom */}
         <div className="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
           <div>
             &copy; {new Date().getFullYear()} Sohanur Rahman. All rights
