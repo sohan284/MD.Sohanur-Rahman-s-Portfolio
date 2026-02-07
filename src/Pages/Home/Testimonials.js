@@ -2,6 +2,16 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Star, Quote } from "lucide-react";
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-cards";
+
+// import required modules
+import { EffectCards } from "swiper/modules";
+
 const Testimonials = () => {
   const testimonials = [
     {
@@ -93,69 +103,77 @@ const Testimonials = () => {
           </p>
         </motion.div>
 
-        {/* Testimonials Grid */}
+        {/* Testimonials Swiper */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="flex justify-center"
         >
-          {testimonials.map((testimonial, index) => (
-            <motion.div
-              key={testimonial.id}
-              variants={cardVariants}
-              whileHover={{ y: -8 }}
-              className="group relative"
-            >
-              <div className="relative overflow-hidden rounded-2xl border border-gray-700 bg-gradient-to-br from-gray-900 to-gray-800 p-1 shadow-xl transition-all duration-300 hover:shadow-2xl hover:shadow-accent/20">
-                {/* Background gradient blur effect */}
-                <div className="absolute -inset-1 bg-gradient-to-r from-accent/10 to-purple-500/10 opacity-0 blur-xl transition-all duration-500 group-hover:opacity-100"></div>
+          <Swiper
+            effect={"cards"}
+            grabCursor={true}
+            modules={[EffectCards]}
+            className="mySwiper w-[320px] md:w-[400px]"
+          >
+            {testimonials.map((testimonial) => (
+              <SwiperSlide key={testimonial.id} className="rounded-2xl">
+                <motion.div
+                  variants={cardVariants}
+                  // whileHover={{ y: -8 }} // Removed hover lift as it might interfere with swipe
+                  className="group relative h-full"
+                >
+                  <div className="relative overflow-hidden rounded-2xl border border-gray-700 bg-gradient-to-br from-gray-900 to-gray-800 p-1 shadow-xl h-full">
+                    {/* Background gradient blur effect */}
+                    <div className="absolute -inset-1 bg-gradient-to-r from-accent/10 to-purple-500/10 opacity-0 blur-xl transition-all duration-500 group-hover:opacity-100"></div>
 
-                <div className="relative flex h-full flex-col rounded-xl bg-gray-900/90 p-6 backdrop-blur-sm">
-                  {/* Quote Icon */}
-                  <div className="mb-4">
-                    <Quote className="w-8 h-8 text-accent/60" />
-                  </div>
+                    <div className="relative flex h-full flex-col rounded-xl bg-gray-900/90 p-8 backdrop-blur-sm">
+                      {/* Quote Icon */}
+                      <div className="mb-6">
+                        <Quote className="w-10 h-10 text-accent/60" />
+                      </div>
 
-                  {/* Rating */}
-                  <div className="flex items-center mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className="w-5 h-5 text-yellow-400 fill-current"
-                      />
-                    ))}
-                  </div>
+                      {/* Rating */}
+                      <div className="flex items-center mb-6">
+                        {[...Array(testimonial.rating)].map((_, i) => (
+                          <Star
+                            key={i}
+                            className="w-5 h-5 text-yellow-400 fill-current"
+                          />
+                        ))}
+                      </div>
 
-                  {/* Content */}
-                  <p className="text-gray-300 leading-relaxed mb-6 flex-grow">
-                    "{testimonial.content}"
-                  </p>
-
-                  {/* Author */}
-                  <div className="flex items-center">
-                    <img
-                      src={testimonial.avatar}
-                      alt={testimonial.name}
-                      className="w-12 h-12 rounded-full object-cover mr-4 border-2 border-accent/20"
-                    />
-                    <div>
-                      <h4 className="font-semibold text-white">
-                        {testimonial.name}
-                      </h4>
-                      <p className="text-sm text-gray-400">
-                        {testimonial.role}
+                      {/* Content */}
+                      <p className="text-gray-300 leading-relaxed mb-8 flex-grow text-lg italic">
+                        "{testimonial.content}"
                       </p>
-                      <p className="text-xs text-accent">
-                        {testimonial.company}
-                      </p>
+
+                      {/* Author */}
+                      <div className="flex items-center border-t border-gray-700 pt-6">
+                        <img
+                          src={testimonial.avatar}
+                          alt={testimonial.name}
+                          className="w-14 h-14 rounded-full object-cover mr-4 border-2 border-accent/20"
+                        />
+                        <div>
+                          <h4 className="font-semibold text-white text-lg">
+                            {testimonial.name}
+                          </h4>
+                          <p className="text-sm text-gray-400">
+                            {testimonial.role}
+                          </p>
+                          <p className="text-xs text-accent">
+                            {testimonial.company}
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </motion.div>
-          ))}
+                </motion.div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </motion.div>
 
         {/* Call to Action */}

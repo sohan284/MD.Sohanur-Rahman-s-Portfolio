@@ -1,135 +1,118 @@
 import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { FaGithub, FaExternalLinkAlt, FaAngleDown } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const ProjectOne = ({ project, isHovered }) => {
   const { title, description, image, tags, github, live, features } = project;
 
   return (
-    <div className="h-full flex flex-col">
-      <div className="relative overflow-hidden rounded-t-xl">
-        <motion.img
-          src={image}
-          alt={title}
-          className="w-full aspect-video object-cover object-top"
-          animate={{
-            scale: isHovered ? 1.05 : 1,
-          }}
-          transition={{ duration: 0.4 }}
-        />
-
-        {/* Overlay that appears on hover */}
-        <motion.div
-          className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent flex items-end justify-between p-4"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: isHovered ? 1 : 0 }}
-          transition={{ duration: 0.3 }}
+    <div className="h-[400px] w-full" style={{ perspective: "1000px" }}>
+      <motion.div
+        className="relative w-full h-full transition-all duration-500"
+        initial={false}
+        animate={{ rotateY: isHovered ? 180 : 0 }}
+        transition={{ duration: 0.2, ease: "easeInOut" }}
+        style={{ transformStyle: "preserve-3d" }}
+      >
+        {/* Front Face */}
+        <div
+          className="absolute inset-0 w-full h-full bg-gray-800 rounded-xl overflow-hidden shadow-xl flex flex-col"
+          style={{ backfaceVisibility: "hidden" }}
         >
-          <div className="flex gap-3">
-            {github && (
-              <motion.a
-                href={github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gray-800 p-2 rounded-full text-white hover:text-accent transition-colors"
-                whileHover={{ scale: 1.1, backgroundColor: "#111827" }}
-              >
-                <FaGithub size={20} />
-              </motion.a>
-            )}
-
-            {live && (
-              <motion.a
-                href={live}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-gray-800 p-2 rounded-full text-white hover:text-accent transition-colors"
-                whileHover={{ scale: 1.1, backgroundColor: "#111827" }}
-              >
-                <FaExternalLinkAlt size={20} />
-              </motion.a>
-            )}
+          <div className="h-1/2 overflow-hidden relative">
+            <img
+              src={image}
+              alt={title}
+              className="w-full h-full object-cover"
+            />
+            {/* Overlay Gradient */}
+            <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60"></div>
           </div>
-        </motion.div>
-      </div>
 
-      <div className="p-6 flex-1 flex flex-col">
-        <h3 className="text-xl font-bold text-white mb-2 group-hover:text-accent transition-colors">
-          {title}
-        </h3>
+          <div className="p-4 flex flex-col flex-1 h-1/2">
+            <h3 className="text-lg font-bold text-white mb-1 group-hover:text-accent transition-colors line-clamp-1">
+              {title}
+            </h3>
+            <div className="flex-1 overflow-hidden">
+              <p className="text-gray-400 text-xs leading-relaxed line-clamp-4 text-justify">
+                {description}
+              </p>
+            </div>
 
-        <p className="text-gray-300 mb-4 flex-1">{description}</p>
-
-        <div className="flex flex-wrap gap-2 mb-4">
-          {tags.map((tag, index) => (
-            <motion.span
-              key={index}
-              className="text-xs bg-gray-700/50 text-gray-300 px-3 py-1 rounded-full"
-              whileHover={{
-                backgroundColor: "rgba(56, 189, 248, 0.2)",
-                color: "#38bdf8",
-              }}
-            >
-              {tag}
-            </motion.span>
-          ))}
-        </div>
-
-        {/* Features Accordion */}
-        <div className="mt-auto w-full">
-          <motion.div
-            className="bg-gray-800/50 rounded-lg overflow-hidden"
-            initial={{ height: 0, opacity: 0 }}
-            animate={{
-              height: isHovered ? "auto" : 0,
-              opacity: isHovered ? 1 : 0,
-            }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-          >
-            <AnimatePresence>
-              {isHovered && (
-                <motion.div
-                  initial={{ y: -20, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  exit={{ y: -20, opacity: 0 }}
-                  transition={{ duration: 0.2, delay: 0.1 }}
-                  className="p-4"
+            <div className="flex flex-nowrap gap-1 mt-2 overflow-hidden items-center">
+              {tags.map((tag, index) => (
+                <span
+                  key={index}
+                  className="text-[9px] bg-gray-700/50 text-accent px-2 py-0.5 rounded-full border border-gray-600/30 whitespace-nowrap"
                 >
-                  <div className="flex items-center mb-2">
-                    <motion.div
-                      animate={{ rotate: isHovered ? 180 : 0 }}
-                      transition={{ duration: 0.3 }}
-                      className="mr-2 text-accent"
-                    >
-                      <FaAngleDown />
-                    </motion.div>
-                    <h4 className="text-md font-semibold text-accent">
-                      Key Features
-                    </h4>
-                  </div>
-                  <ul className="list-disc pl-5 space-y-1">
-                    {features &&
-                      features.map((feature, index) => (
-                        <motion.li
-                          key={index}
-                          initial={{ x: -10, opacity: 0 }}
-                          animate={{ x: 0, opacity: 1 }}
-                          transition={{
-                            duration: 0.2,
-                            delay: 0.1 + index * 0.05,
-                          }}
-                          className="text-sm text-gray-300"
-                        >
-                          {feature}
-                        </motion.li>
-                      ))}
-                  </ul>
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </motion.div>
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
+
+        {/* Back Face */}
+        <div
+          className="absolute inset-0 w-full h-full bg-gray-900 rounded-xl overflow-hidden shadow-xl flex flex-col border border-gray-700/50"
+          style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }}
+        >
+          {/* Image on Back Face as well for continuity */}
+          <div className="h-1/2 overflow-hidden relative">
+            <img
+              src={image}
+              alt={title}
+              className="w-full h-full object-cover grayscale opacity-50"
+            />
+            <div className="absolute inset-0 bg-gray-900/60"></div>
+            <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-gray-900 to-transparent">
+              <h3 className="text-xl font-bold text-white text-center">
+                Key Features
+              </h3>
+            </div>
+          </div>
+
+          <div className="p-4 flex flex-col flex-1 h-1/2">
+            <ul className="space-y-1.5 pl-2 flex-1 overflow-y-auto custom-scrollbar">
+              {features && features.map((feature, index) => (
+                <li key={index} className="text-gray-300 text-xs flex items-start gap-1.5 leading-tight">
+                  <span className="text-accent mt-0.5 text-[10px]">▹</span>
+                  {feature}
+                </li>
+              ))}
+            </ul>
+
+            <div className="mt-4 flex justify-center gap-4 pt-3 border-t border-gray-700">
+              {github && (
+                <a
+                  href={github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-white hover:text-accent transition-colors group text-sm"
+                >
+                  <div className="p-1.5 bg-gray-800 rounded-full group-hover:bg-accent/20 transition-colors">
+                    <FaGithub size={16} />
+                  </div>
+                  <span className="font-medium">Code</span>
+                </a>
+              )}
+              {live && (
+                <a
+                  href={live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-white hover:text-accent transition-colors group text-sm"
+                >
+                  <div className="p-1.5 bg-gray-800 rounded-full group-hover:bg-accent/20 transition-colors">
+                    <FaExternalLinkAlt size={14} />
+                  </div>
+                  <span className="font-medium">Live Demo</span>
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      </motion.div>
     </div>
   );
 };

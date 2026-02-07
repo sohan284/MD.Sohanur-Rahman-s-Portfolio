@@ -42,9 +42,8 @@ const Banner = () => {
         particle.style.opacity = Math.random() * 0.5;
 
         // Add animation
-        particle.style.animation = `float ${
-          Math.random() * 30 + 20
-        }s ease-in-out infinite alternate`;
+        particle.style.animation = `float ${Math.random() * 30 + 20
+          }s ease-in-out infinite alternate`;
 
         particlesRef.current.appendChild(particle);
       }
@@ -136,7 +135,7 @@ const Banner = () => {
                 sequence={[
                   "I AM SOHANUR RAHMAN",
                   1000,
-                  "FULL STACK DEVELOPER",
+                  "FRONTEND DEVELOPER",
                   1000,
                   "WEB ARCHITECT",
                   1000,

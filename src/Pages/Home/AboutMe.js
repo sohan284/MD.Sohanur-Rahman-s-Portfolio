@@ -268,7 +268,7 @@ const AboutMe = () => {
                       color: colors.white,
                     }}
                   >
-                    Full Stack Developer
+                    Frontend Developer
                   </span>
                 </h2>
                 <p

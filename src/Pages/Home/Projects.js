@@ -3,10 +3,21 @@ import { motion } from "framer-motion";
 import useProject from "../Shared/Hooks/useProject";
 import ProjectOne from "./ProjectOne";
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import required modules
+import { EffectCoverflow, Pagination, Navigation, Autoplay } from "swiper/modules";
+
 const Projects = () => {
   const [project] = useProject();
   const [hoveredId, setHoveredId] = useState(null);
-  console.log(project);
 
   // Subtle background color transition effect for the entire section
   const sectionVariants = {
@@ -47,7 +58,7 @@ const Projects = () => {
 
       <motion.div
         variants={titleVariants}
-        className="text-center mb-20 relative z-10"
+        className="text-center mb-10 relative z-10"
       >
         <motion.h2
           className="text-accent text-xl mb-3 font-medium inline-block"
@@ -66,43 +77,47 @@ const Projects = () => {
         </p>
       </motion.div>
 
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 mt-16">
-        {project.map((p, index) => (
-          <motion.div
-            key={p.id}
-            variants={{
-              hidden: { opacity: 0, y: 50 },
-              visible: {
-                opacity: 1,
-                y: 0,
-                transition: {
-                  duration: 0.6,
-                  ease: [0.215, 0.61, 0.355, 1],
-                  delay: index * 0.15,
-                },
-              },
-            }}
-            whileHover={{
-              y: -8,
-              transition: { type: "spring", stiffness: 300 },
-            }}
-            onHoverStart={() => setHoveredId(p.id)}
-            onHoverEnd={() => setHoveredId(null)}
-            className="relative"
-          >
-            <motion.div
-              animate={{
-                boxShadow:
-                  hoveredId === p.id
-                    ? "0 22px 40px rgba(0, 0, 0, 0.3)"
-                    : "0 10px 30px rgba(0, 0, 0, 0.15)",
-              }}
-              className="rounded-xl overflow-hidden bg-gray-800/50 backdrop-blur-sm border border-gray-700/50"
+      <div className="mt-16">
+        <Swiper
+          effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={"auto"}
+          coverflowEffect={{
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          pagination={true}
+          navigation={true}
+          modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
+          className="mySwiper w-full py-12"
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
+          loop={true}
+        >
+          {project.map((p) => (
+            <SwiperSlide
+              key={p.id}
+              className="!w-[300px] sm:!w-[350px] md:!w-[400px] lg:!w-[450px]"
             >
-              <ProjectOne project={p} isHovered={hoveredId === p.id} />
-            </motion.div>
-          </motion.div>
-        ))}
+              <div
+                onMouseEnter={() => setHoveredId(p.id)}
+                onMouseLeave={() => setHoveredId(null)}
+                className="relative"
+              >
+                <div className="rounded-xl overflow-hidden bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 shadow-[0_10px_30px_rgba(0,0,0,0.15)]">
+                  <ProjectOne project={p} isHovered={hoveredId === p.id} />
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
 
       {/* Floating decoration */}
